@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+html {
+    overflow-x: hidden; }
+  
+  * {
+    padding: 0;
+    margin: 0; }
+
+.Formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn.btn-primary{
+    background-color: #21b5f1 ;
+    border: #21b5f1; 
+    border-radius: 8px;
+    width: 45vh!important;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-outline-secondary{
+    color: black;
+    background-color: fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.letraF{
+    color: #385185;
+    font-size: 14px;
+    width: 30vh;
+}
+
+.login-photo {
+    max-width:100%;
+    padding: 40px;
+    margin: 50px;
+    margin-top: 100px;
+    
+}
+
+.I-R{
+    text-decoration: none;
+    color: rgb( 0, 149, 246);
+}
+
+.formularioL{
+   width: 45vh!important;
+   font-size: small;
+   background-color: #f0f2f0;
+}
+
+.formularioLA{
+    font-size: small;
+}
+
+.fB{
+    background-color: rgb(0, 149, 246)!important;
+    height: 35px;
+     width: 45vh!important;
+    font-size: small;
+} 
+
+.postIG{
+    margin: 10vh;
+    width: 150vh;
+    margin-left: 100px;
+}
+
+
+.letra{
+    color: black;
+    height: 60px;
+}
+
+.letra:hover{
+  opacity: 50%;  
+}
+
+.fotoResolution{
+    border-radius: 50%;
+    width: 5vh;
+}
+
+.imgC{
+  margin-left: 25px;
+  border-radius: 50%;
+  width: 35px;
+  height: 40px;
+}
+
+.imgCP{
+  border-radius: 60%;
+  width: 25vh;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+
+.botonC{
+  width: 10vh;
+  background-color: white;
+  border-style: none;
+}
+
+
+.LetraPost{
+padding-left: 10px;
+text-decoration: none;
+color: black;
+}
+
+.icons{
+  width: 7vh;
+  background-color: white;
+  border-color: white;
+  border-style: none;
+  height: 40px;
+  font-size: 20px;
+}
+
+.icoNot {
+  width: 7vh;
+  background-color: white;
+  border-style: none;
+  height: 40px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.icons:hover .svg-inline--fa{
+  opacity: 70%;
+}
+
+.iconSave{
+  padding-left: 50vh;
+}
+
+.mC{
+  background-color: white;
+  border-style: none;
+  text-align: start;
+}
+
+.addC{
+  height: 38px;
+  color: rgb(105, 99, 99);
+  font-size: 14px;
+}
+
+.posteo{
+  height: 10px;
+}
+
+
+.fotoig{
+  width: 22vh;
+}
+
+.perfilC{
+ margin-top: 60px;
+}
+
+.containerPosts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px; 
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.containerPosts img{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nombre{
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
 }
+
+.time{
+  color: #999999;
+  margin-left: 10px;
+}
+
+.profile-details {
+  margin-top: 5rem;
+}
+
+.userName{
+  font-size: 3vh;
+}
+
+.cardP{
+  margin-right: 35vh;
+}
+
+.nombreU{
+  font-size: 2.5vh;
+}
+
+.pubSS{
+  margin-right: 40px;
+}
+
+
+
+
