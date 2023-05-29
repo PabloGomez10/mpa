@@ -10,6 +10,7 @@ import cosme3   from '../img/cosme3.png';
 import cosme4   from '../img/cosme4.png';
 import cosme5   from '../img/cosme5.png';
 
+
 function Perfil() {
    return (
        <div>
