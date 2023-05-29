@@ -1,81 +1,153 @@
-/*import React from 'react';
+import React, { useState } from 'react';
+import { Row, Col, Card } from 'react-bootstrap';
 import instagram from '../img/instagram.png';
-import fondo from '../img/fondo.jpg';
-import { Row, Col, Card} from 'react-bootstrap';
-import perfil from '../img/perfil.jpg';
+import microsoft from '../img/microsoft.png';
+import playstore from '../img/playstore.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Post() {
+function Registro() {
+  const [isPasswordVisible, setPasswordVisible] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!isPasswordVisible);
+  };
+
   return (
-    <div>
-      
-      <Row>
-         <Col md={2} xs={4}>
-           <nav className="nav flex-column">
-             <img src={instagram} alt="Foto de instagram"  className="fotoig " />
+    <div className="container">
+      <Row className="justify-content-center">
+        <Col xs={12} sm={8} md={6} lg={4}>
+          <Card className="mb-5 borderL borderR">
+            <Card.Body>
+              <form>
+                <div className="mt-5">
+                  <img src={instagram} className="imgLogin imgR" alt="Instragram" />
+                  <p className="text-center textR"> Regístrate para ver fotos y videos de tus amigos.</p>
+                  <div className="form-group">
+                    <button type="submit" href="" className="btn btn-primary fbR">
+                      Iniciar Sesión con Facebook
+                    </button>
+                  </div>
+                  <div className="loginLC mt-4">
+                    <div className="line"></div>
+                    <div className="circle"></div>
+                    <div className="line"></div>
+                  </div>
 
-              <div className='d-flex flex-row'> 
-              <button className='icoNot'><FontAwesomeIcon icon="fa-solid fa-house-user" style={{color: "#000000",}} /></button>
-               <a className="nav-link active letra " aria-current="page" href="/post">Inicio </a> 
-              </div>
+                  <div className="mt-2 registroButton">
+                    <label htmlFor="exampleInputEmail1" className="form-label"></label>
+                    <input
+                      type="email"
+                      className="form-control d-block formularioL"
+                      placeholder="Numero de celular o correo electrónico"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
 
-              <div className='d-flex flex-row'> 
-               <button  className='icoNot'> <FontAwesomeIcon icon="fa-regular fa-heart" style={{color: "#000000",}} /></button>
-               <b className="nav-link letra" >Notificaciones</b> {/* si no poner seccion de Crear */
-             /* </div>
+                  <div className="registroButton">
+                    <label htmlFor="exampleInputEmail1" className="form-label"></label>
+                    <input
+                      type="email"
+                      className="form-control d-block formularioL"
+                      placeholder="Nombre Completo"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
 
-              <div className='d-flex flex-row'>
-               <img src={perfil} className="card-img-top imgC" alt="foto del post"/>
-               <a className="nav-link letra" href="/perfil">Perfil</a>
-              </div>
-             
+                  <div className="mb-3 registroButton">
+                    <label htmlFor="exampleInputEmail1" className="form-label"></label>
+                    <input
+                      type="email"
+                      className="form-control d-block formularioL"
+                      placeholder="Nombre de usuario"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
 
-               <div> {/* BORRAR ESTA LINEA HASTA EL DIV LUEGO*/
-                /* <br></br><br></br> <br></br><br></br> 
-                 <br></br><br></br> <br></br><br></br>
-                 <br></br><br></br> <br></br><br></br> 
-                    <a className="nav-link letra" href="/" >Login</a>
-               </div> {/* BORRAR ESTA LINEA HASTA EL DIV LUEGO*/
-          /* </nav>
-          </Col>
+                  <div className="password-toggle-container registroButton">
+                    <input
+                      type={isPasswordVisible ? 'text' : 'password'}
+                      id="passwordInput"
+                      className="form-control d-block formularioL"
+                      placeholder="Contraseña"
+                    />
+                    <button className="toggle-button" type="button" onClick={togglePasswordVisibility}>
+                      {isPasswordVisible ? 'Ocultar' : 'Mostrar'}
+                    </button>
+                  </div>
 
-          <Col md={7} xs={8}> 
-           <div className="card">
-             <div className="card postIG">
-              <div className='d-flex flex-row'> 
-                <img src={perfil} className="card-img-top fotoResolution" alt="foto del post"/>
-                <a className="card-text textResolution LetraPost"> Cosmefulanito.ok </a> 
-                <p> 1h</p>
-              </div>
-                <img src={fondo} className="card-img-top" alt="foto del post"/>
-              <div  className=''>
-                
-                <button  className='icons'> <FontAwesomeIcon icon="fa-regular fa-heart" style={{color: "#000000",}} /></button>
-                <button  className='icons'> <FontAwesomeIcon icon="fa-regular fa-comment"  className='instagram-btn comment-btn'flip="horizontal" /></button>
-                <button  className='icons'><FontAwesomeIcon icon="fa-regular fa-paper-plane" style={{color: "#000000",}} /></button>
-                <button  className='icons iconSave'><FontAwesomeIcon icon="fa-regular fa-bookmark" style={{color: "#000000",}} /></button>
-              </div>
-                <button className='mC'> <p className="card-text">1000 Me gusta</p></button>
-                <p className='posteo'> La luna!</p>
-                <button className='mC cM'> <p className="card-text">Ver los comentarios</p></button>
-                <p className="card-text  addC">Agregar un comentario...</p>
-              </div>
-            </div>
-           </Col>
+                  <div>
+                    <div className="registroFont mt-3">
+                      <span>
+                        Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto a
+                        Instagram.
+                        <a className="registroLinks"> Más información</a>
+                      </span>
+                    </div>
 
-           <Col md={2}>
-            <nav className="nav flex-column">
-              <div className='d-flex flex-row perfilC'>
-                <img src={perfil} className="card-img-top imgC" alt="foto del post"/>
-                <a className="nav-link letra" href="/perfil">Cosmefulanito.ok</a>
-              </div>
-             </nav> 
-           </Col>
+                    <div className="mt-3 registroFont">
+                      <span>
+                        Al registrarte, aceptas nuestras{' '}
+                        <a className="registroLinks">Condiciones </a>
+                        , la{' '}
+                        <a className="registroLinks">Política de privacidad</a>
+                        y la{' '}
+                        <a className="registroLinks">Política de cookies.</a>
+                      </span>
+                    </div>
+                    <button type="submit" className="btn btn-primary buttonRegistro mt-3 mb-3">
+                      Registrarte
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </Card.Body>
+          </Card>
 
+          <Card className="borderL registroCard">
+            <Card.Body className="text-center">
+              <p className="registroT">
+                ¿Tienes una cuenta? <a className="registroI" href="/">
+                  Inicia sesión
+                </a>
+              </p>
+            </Card.Body>
+          </Card>
+
+          <div className="text-center">
+            <h3 className="loginDescargarAPP mt-3"> Descarga la app.</h3>
+            <img src={playstore} className="imgLoginDescargas mt-2" alt="Play Store" />
+            <img src={microsoft} className="imgLoginDescargas imgML mt-2" alt="Microsoft" />
+          </div>
+        </Col>
       </Row>
-    </div>
 
+      <div className="d-flex justify-content-around loginFooter mt-5">
+        <p>Meta</p>
+        <p>Información</p>
+        <p>Blog</p>
+        <p>Empleo</p>
+        <p>Ayuda</p>
+        <p>API</p>
+        <p>Privacidad</p>
+        <p>Condiciones</p>
+        <p>Cuentas destacadas</p>
+        <p>Ubicaciones</p>
+        <p>Instagram Lite</p>
+        <p>Subir contactos y no usuarios</p>
+        <p>Meta verified</p>
+      </div>
+
+      <div className="d-flex justify-content-evenly loginFooter2">
+        <p>Español</p>
+        <p className="footer3">© 2023 Instagram from Meta</p>
+      </div>
+
+      <div className="mt-5"></div>
+    </div>
   );
 }
 
-export default Post;*/
+export default Registro;

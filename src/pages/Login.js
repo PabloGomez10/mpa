@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import ig from '../img/ig.jpg';
 import instagram from '../img/instagram.png'
+import microsoft from '../img/microsoft.png'
+import playstore  from '../img/playstore.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Login() {
-  const [passwordVisible, setPasswordVisible] = useState(false);
+  const [isPasswordVisible, setPasswordVisible] = useState(false);
 
-  const handleTogglePasswordVisibility = () => {
-    setPasswordVisible(!passwordVisible);
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!isPasswordVisible);
   };
-
+  
   return (
 
     <div className="container">
@@ -18,59 +21,99 @@ function Login() {
         <Col md={4}>
           <img src={ig} alt="Foto de instagram"  className="login-photo" />
         </Col>
+
         <Col md={4}>
 
            <div className=''>
-             <Card>
-               <Card.Body>
-                 <form>
-                   <div className='Formulario'> 
-                       <img src={instagram} alt="Instragram"/>
+               <Card className='mb-5 mt-5 borderL'>
+                   <Card.Body>
+                       <form>
+                           <div className='Formulario mt-5'> 
+                               <img src={instagram} className='imgLogin' alt="Instragram"/>
         
-                       <div className="mb-3 form-group furmularioL">
-                         <label for="exampleInputEmail1" className="form-label"></label>
-                         <input type="email" className="form-control d-block formularioL" id="exampleInputEmail1"  placeholder="Numero de celular o correo electrónico" aria-describedby="emailHelp"/>
-                       </div> 
-                
-                       <div className="mb-3 formularioLA">
-                          <label htmlFor="exampleInputPassword1 " className="form-label"></label>
-                          <div className="input-group">
-                            <input type={passwordVisible ? 'text' : 'password'} className="form-control" placeholder="Contraseña" id="exampleInputPassword1" />
-                            <button type="button" className="btn btn-outline-secondary " onClick={handleTogglePasswordVisibility}>
-                              {passwordVisible ? 'Ocultar' : 'Mostrar'}
-                             </button>
+                               <div className="mb-3 form-group furmularioL mt-3">
+                                 <label for="exampleInputEmail1" className="form-label"></label>
+                                 <input type="email" className="form-control d-block formularioL" id="exampleInputEmail1"  placeholder="Teléfono, usuario o correo electrónico" aria-describedby="emailHelp"/>
+                               </div> 
+                               
+                                 <div className="password-toggle-container">
+                                    <input type={isPasswordVisible ? 'text' : 'password'} id="passwordInput"
+                                    className="form-control d-block formularioL" placeholder="Contraseña" />
+                                    <button className="toggle-button"type="button" onClick={togglePasswordVisibility}>
+                                      {isPasswordVisible ? 'Ocultar' : 'Mostrar'}
+                                    </button>
+                                 </div>
+                                 
+                                 <div className="form-group text-center mt-3">
+                                   <button type="submit" className="btn btn-primary loginIniciar">Iniciar Sesión</button>
+                                 </div>
+
+                                 <div className='loginLC mt-4'>
+                                   <div className='line'></div>
+                                   <div className='circle'></div>
+                                   <div className='line'></div>
+                                 </div>
+
+                                 <div className='mt-4'>
+                                     <div>
+                                          <button className='buttonLoginFacebook d-flex'>
+                                            <FontAwesomeIcon icon="fa-brands fa-facebook" className='loginFacebook' /> 
+                                            <a   className='letraF' href='https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%252216t45wk9ms112mlffgc1jwgolgf11wxb1ks9nbm160a02hpw733c%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Des_LA%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc30b3478-3485-4d68-8514-5c4889d7f272%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%252216t45wk9ms112mlffgc1jwgolgf11wxb1ks9nbm160a02hpw733c%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=es_LA&pl_dbl=0' target={'_blank'}>
+                                            Iniciar Sesión con Facebook</a>
+                                          </button>
+                                     </div>
+                                       <button className='buttonLoginFacebook d-flex'>
+                                         <p className='letraO'>¿Olvidate tu contraseña?</p>
+                                       </button>
+                                 </div>
                            </div>
-                       </div>
-                  
-                      <div className="form-group text-center ">
-                        <button type="submit" className="btn btn-primary">Iniciar Sesión</button>
-                      </div>
-
-                       <p className='letraF'>Iniciar Sesión con Facebook</p>
-                       <p>¿Olvidate tu contraseña?</p>
-
-                    </div>
-                
-                  </form>
-                </Card.Body>
-              </Card>
+                       </form>
+                   </Card.Body>
+                </Card>
            </div>
 
-          <Card>
-            <Card.Body className='text-center'>
-               <p>¿No tienes una cuenta? <a className='I-R' href='/registro'> Registrate</a></p>
-            </Card.Body>
-          </Card>
-          
+             <Card className='custom-card borderL'>
+                 <Card.Body className='text-center'>
+                    <p className='loginNC' >¿No tienes una cuenta? <a className='loginRE' href='/registro' target={'_blank'}> Regístrate</a></p>
+                 </Card.Body>
+             </Card>
+
+               <div>
+                 <h3 className='loginDescargarAPP mt-3'> Descarga la app.</h3>
+                 <img src={playstore} className='imgLoginDescargas mt-2'/>
+                 <img src={microsoft} className='imgLoginDescargas imgML mt-2'/> 
+               </div>
+
         </Col>
        </Row>
-      
-                   <a className='post' href='/feed' > Inicio</a>   {/* LUEGO BORRAR ESTA LINEA */}
-     
+                  
+                   <div className='d-flex justify-content-around loginFooter'>
+                       <p>Meta</p>
+                       <p>Información</p>
+                       <p>Blog</p>
+                       <p>Empleo</p>
+                       <p>Ayuda</p>
+                       <p>API</p>
+                       <p>Privacidad</p>
+                       <p>Condiciones</p>
+                       <p>Cuentas destacadas</p>
+                       <p>Ubicaciones</p>
+                       <p>Instagram Lite</p>
+                       <p>Subir contactos y no usuarios</p>
+                       <p>Meta verified</p>
+                   </div>
+                   
+                   <div className='d-flex justify-content-evenly loginFooter2'>
+                   <p>Español</p>
+                   <p className='footer3'>© 2023 Instagram from Meta</p>
+                   </div>
 
+                   <a className='post' href='/feed' > Inicio</a>   {/* LUEGO BORRAR ESTA LINEA */}
     </div>
+    
   );
 }
 
 export default Login;
 
+// codigo ordenado
