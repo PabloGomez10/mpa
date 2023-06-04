@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import instagram from '../img/instagram.png';
 import microsoft from '../img/microsoft.png';
@@ -151,3 +151,4 @@ function Registro() {
 }
 
 export default Registro;
+*/

@@ -24,26 +24,51 @@ function Perfil() {
                           <a className="nav-link active letra " aria-current="page" href="/feed">Inicio </a> 
                         </div>
 
-                         <div className='d-flex flex-row'> 
-                           <button  className='icoNot'> <FontAwesomeIcon icon="fa-regular fa-heart" style={{color: "#000000",}} /></button>
+                        <div className='d-flex flex-row mt-4'> 
+                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
+                          <a className="nav-link active letra " aria-current="page" href="/feed">Buscar</a> 
+                        </div>
+
+                        <div className='d-flex flex-row mt-4'> 
+                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
+                          <a className="nav-link active letra " aria-current="page" href="/feed">Explorar</a> 
+                        </div>
+
+                        <div className='d-flex flex-row mt-4'> 
+                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
+                          <a className="nav-link active letra " aria-current="page" href="/feed">Reels</a> 
+                        </div>
+
+                        <div className='d-flex flex-row mt-4'> 
+                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
+                          <a className="nav-link active letra " aria-current="page" href="/feed">Mensajes</a> 
+                        </div>
+
+                        <div className='d-flex flex-row mt-4'> 
+                           <button  className='icoNot'> <FontAwesomeIcon icon="fa-regular fa-heart" style={{color: "#000000"}} /></button>
                            <p className="nav-link letra">Notificaciones</p>
                          </div>
 
-                         <div className='d-flex flex-row'>
+                        <div className='d-flex flex-row mt-2'> 
+                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
+                          <a className="nav-link active letra " aria-current="page" href="/feed">Crear</a> 
+                        </div>
+
+                         <div className='d-flex flex-row mt-4'>
                            <img src={perfil} className="card-img-top imgC" alt="foto del post"/>
-                           <a className="nav-link letra" href="/perfil">Perfil</a>
+                           <a className="nav-link letra letraP" href="/perfil">Perfil</a>
                           </div>
-                           <a className="nav-link letra mt-5" href="/" >Login</a>
+                           <a className="nav-link letra mt-5" href="/" >Feed</a>
                    </nav>
                </Col>
 
                <Col md={10} xs={8}> 
                    <div className="card">
-                         <div className="profile-container d-flex justify-content-center cardP"> 
-                             <div className="profile-header">
-                                   <div className="profile-details">
+                         <div className="profile-container d-flex justify-content-center cardPerfil"> 
+                             <div className="profile-header mt-5">
+                                   <div className="mt-5">
                                          <div className="d-flex align-items-center">
-                                             <img src={perfil} alt="foto del perfil" className="imgCP" />
+                                             <img src={perfil} alt="foto del perfil" className="perfilFoto" />
                                              <div className="d-flex flex-column ml-3">
                                                    <div className="d-flex align-items-center justify-content-around">
                                                        <h2 className="profile-username mr-5 userName">Cosmefulatino.ok</h2>
@@ -60,12 +85,16 @@ function Perfil() {
                                                    <div className="profile-name mt-3">
                                                        <h4 className='nombreU'>Cosme Fulatino</h4>
                                                    </div>
+                                                   
                                              </div>
                                          </div>
                                    </div>
                              </div>
                          </div>
  
+                         <div className='loginLC mt-5'>
+                            <div className='lineP'></div>
+                         </div>
                          <div className="card postIG containerPosts">
                              <img src={cosme} className="card-img-top w-100" alt="foto del post"/>
                              <img src={cosme1} className="card-img-top w-100" alt="foto del post"/>
@@ -74,6 +103,31 @@ function Perfil() {
                              <img src={cosme4} className="card-img-top w-100" alt="foto del post"/>
                              <img src={cosme5} className="card-img-top w-100" alt="foto del post"/>
                          </div>
+
+                         <div className='footer-container mt-5'>
+                   <footer className='d-flex justify-content-evenly loginFooter '>
+                       <p>Meta</p>
+                       <p>Información</p>
+                       <p>Blog</p>
+                       <p>Empleo</p>
+                       <p>Ayuda</p>
+                       <p>API</p>
+                       <p>Privacidad</p>
+                       <p>Condiciones</p>
+                       <p>Cuentas destacadas</p>
+                       <p>Ubicaciones</p>
+                       <p>Instagram Lite</p>
+                       <p>Subir contactos y no usuarios</p>
+                       <p>Meta verified</p>
+                   </footer>
+                   
+                   <div className='mb-5'>
+                     <footer className='d-flex loginFooter2 justify-content-center' >
+                        <p className='p-3'>Español</p>
+                        <p className='p-3'>© 2023 Instagram from Meta</p>
+                      </footer>
+                   </div>
+                </div>
                    </div>
                </Col>
            </Row>

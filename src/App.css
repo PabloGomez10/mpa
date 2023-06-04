@@ -6,119 +6,61 @@ html {
     margin: 0; }
 
 
-.loginRE{
-  text-decoration: none;
-  font-family:  sans-serif;
-  color: #0097F6;
-  font-size: 2.1vh;
-  font-weight: 600;
+/* Login */
+  
+.login-photo {
+      width: 100%;
+      height: 600px;
+      margin-top: 12vh;
+  }
 
-}
-
-.loginNC{
-  font-size: 14px;
-  color: black;
-
-}
-    
 .borderL{
-  border-radius: 0px;
-}
-.borderR{
-  margin-top: 2vh;
+    border-radius: 0px;
+    width: 100%;
+    margin:10px;
+    margin-top: 12vh;
 }
 
-.Formulario{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 52vh;
+.imgLogin{
+  margin-top: -8vh;
+  margin-left: 45px;
 }
 
 .formularioL{
-   width: 45vh;
-   font-size: 12px;
-   height: 6vh;
-   margin-top: -10px;
-   background-color: #FAFAFA;
-   border-radius: 0px;
+  width: 100%;
+  max-width: 350px;
+  font-size: 12px;
+  height: 4vh;
+  background-color: #FAFAFA;
+  border-radius: 0px;
+
 }
 
-.toggle-button{
+.password-toggle-container {
+  position: relative;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
   font-size: 11px;
   margin-right: 10px;
   margin-top: -2px;
 }
 
-.custom-card {
-  margin-top: -6vh;
-  height: 10vh;
-}
-
-.imgLogin{
-  margin-top: -6vh!important;
-}
-
 .btn.btn-primary{
-    background-color: #4CB5F9;
-    border: #4CB5F9; 
-    border-radius: 8px;
-    width: 45vh;
-    justify-content: center;
-    margin-top: -2px;
-}
-
-.btn-outline-secondary{
-    color: black;
-    background-color: fff;
-}
-
-.buttonLoginFacebook{
-  background-color: white;
-  border-color: white;
-  border-style: none;
-}
-
-.letraF{
-    color: #385185; 
-    font-size: 2.3vh;
-    width: 30vh;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.letraO{
-  font-size: 12px;
-  color: rgb(0, 55, 107);
-  margin-left: 6vh;
-  margin-top: 2.5vh;
-}
-.loginLC {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.line {
-  width: 19vh;
-  height: 1px;
-  background-color: #DBDBDB ;
-  margin: 4px;
-}
-
-.circle {
-  width: 9px;
-  height: 9px;
-  border: 2px solid rgb(115, 115, 115);
-  border-radius: 50%;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.loginFacebook{
-  margin-right: 1vh;
-  margin-top: 0.5vh;
-  background-color: none;
+  background-color: #4CB5F9;
+  border: #4CB5F9; 
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
 }
 
 .loginIniciar{
@@ -126,247 +68,317 @@ html {
   font-size: 2.2vh;
 }
 
-/*  css del button mostrar/ocultar  */ 
-
-.password-toggle-container {
-  position: relative;
-  display: inline-block;
+.loginLC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.password-input {
-  padding-right: 40px;
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #DBDBDB ;
+  margin: 4px;
 }
 
-.toggle-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.circle {
+  width: 15px;
+  height: 9px;
+  border: 2px solid rgb(115, 115, 115);
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.fa-eye-slash {
-  display: none;
+.buttonLoginFacebook{
+  background-color: transparent;
+  border-color: transparent;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  padding-left: 50px
 }
 
-.fa-eye {
-  display: inline;
+.loginFacebook{
+  background-color: transparent;
+  margin: 1vh;
 }
 
-/*  */
-.login-photo {
-    width: 76vh;
-    margin-left: -13vh;
-    height: 102vh;
-    margin-top: 5vh;
-}
-
-.loginDescargarAPP{
-  text-align: center;
-  font-size: 2.2vh;
-  font-weight: 400;
-}
-
-.imgLoginDescargas{
-  height: 40px;
-  margin-left: 50px;
-}
-
-.imgML{
-  margin-left: 8px;
-}
-
-.loginFooter{
-  font-size: 0.7rem;
-  color:  rgb(115, 115, 115);
-  margin-top: -10px;
-}
-
-.loginFooter2{
-  font-size: 0.7rem;
-  color:  rgb(115, 115, 115);
-  margin-left: 3vh; 
-}
-
-.footer3{
-  margin-left: -68vh;
-}
-
-
-
-/*  */
-
-
-.imgR{
-  margin-left: 6vh;
-}
-
-.textR{
-  font-size: 2.8vh;
-  color: #807773;
-  width: 44vh;
-  margin-left: 4vh;
+.letraF{
+  color: #385185; 
+  width: 100%;
+  text-decoration: none;
   font-weight: 600;
 }
 
-.fbR{
-    background-color: rgb(0, 149, 246)!important;
-    height: 35px;
-    width: 45vh!important;
-    font-size: 2.2vh;
-    margin-left: 4vh;
-    font-weight: 600;
-} 
-
-.registroButton{
-  margin-left: 4vh;
-  margin-top: -1.3vh;
+.letraO{
+width: 100%;
+color: rgb(0, 55, 107);
+padding-left: 4vh;
+margin-bottom: -5vh;
 }
 
-.buttonRegistro{
- 
-  margin-left: 4vh;
- height: 5.5vh!important;
- margin-top: 100vh;
- font-size: 2.3vh;
- font-weight: 550;
+.custom-card {
+  width: 100%;
+  margin-top: 1vh;
+}
+
+.loginNC{
+  font-size: 100%;
+  color: black;
+}
+
+.loginRE{
+  text-decoration: none;
+  font-family:  sans-serif;
+  color: #0097F6;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+.loginDescargarAPP{
+text-align: center;
+font-size: 100%;
+font-weight: 400;
+}
+
+.imgLoginDescargas{
+width: 100px;
+height: 40px;
+}
+
+.footer-container {
+  margin: 130px;
+}
+
+.loginFooter{
+width: 100%;
+font-size: 0.7rem;
+color:  rgb(115, 115, 115);
+}
+
+.loginFooter2{
+font-size: 0.7rem;
+width: 100%;
+color:  rgb(115, 115, 115);
+
+}
+
+/* REGISTRO */
+
+.borderR{
+  border-radius: 0px;
+  width: 100%;
+  margin:10px;
+}
+
+.textR{
+  font-size: 17px;
+  color: #807773;
+  width: 100%;
+  font-weight: 600;
+}
+
+.registroFB{
+  background-color: rgb(0, 149, 246)!important;
+  width: 80%!important;
+  font-weight: 600;
+} 
+
+.formularioR{
+margin-left: 12px;
 }
 
 .registroFont{
-  font-size: 2vh;
-  width: 45vh;
-  padding-inline-end: 1px;
-  margin-left: 5vh;
+  font-size: 12px;
+  max-width: 100%;
+  /* padding-inline-end: 120px; */
   color: rgb(115, 115, 115);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .registroLinks{
-  font-size: 2vh;
   color:#18406B;
   text-decoration: none;
 }
 
-
-
-.postIG{
-    margin: 20vh;
-    width: 75vh;
-    margin-left: 25vh;
-}
-
-
-.letra{
-    color: black;
-    height: 60px;
-}
-
-.letra:hover{
-  opacity: 50%;  
-}
-
-
-
-.fotoResolution{
-    border-radius: 50%;
-    width: 6vh;
-}
-
-.registroI{
-font-size: 2.3vh;
-text-decoration: none;
-color: #0095F7;
-}
-
-.registroT{
-font-size: 2.3vh;
-margin-top: 2vh;
+.buttonRegistro{
+width: 80%!important;
+ font-weight: 550;
 }
 
 .registroCard{
-  margin-top: -6vh;
+  margin-top: -4vh;
+  font-size: 14px;
+  height: 60px;
 }
 
-.imgC{
-  margin-left: 25px;
-  border-radius: 50%;
-  width: 35px;
-  height: 40px;
+.registroI{
+  text-decoration: none;
+  color: #0095F7;
+  }
+
+/* FEED */
+
+.fotoig{
+  width: 60%;
 }
 
-.imgCP{
-  border-radius: 60%;
-  width: 25vh;
-  margin-top: 30px;
-  margin-right: 100px;
+.letra{
+  color: black;
+  /* height: 100%; */
+  /* width: 100%; */
 }
 
-.botonC{
-  width: 10vh;
-  background-color: white;
-  border-style: none;
+.letraP{
+  margin-left: 30px;
 }
 
-
-.LetraPost{
-padding-left: 10px;
-text-decoration: none;
-color: black;
-margin-top: 8px;
-}
-
-.icons{
-  width: 7vh;
-  background-color: white;
-  border-color: white;
-  border-style: none;
-  height: 40px;
-  font-size: 20px;
+.letra:hover{
+opacity: 50%;  
 }
 
 .icoNot {
-  width: 7vh;
-  background-color: white;
+  width: 10vh;
+  background-color: transparent;
   border-style: none;
   height: 40px;
-  margin-left: 20px;
   font-size: 20px;
 }
 
-.icons:hover .svg-inline--fa{
-  opacity: 70%;
+.imgC{
+  border-radius: 50%;
+  width: 10%;
+  height: 100%;
+  margin-left: 32px;
 }
 
-.iconSave{
-  padding-left: 50vh;
+.postIG{
+  margin: 10vh;
+  width: 50%;
+  margin-left: 35vh;
+  border-color: transparent;
+
 }
 
-.mC{
-  background-color: white;
-  border-style: none;
-  text-align: start;
+.fotoResolution{
+  border-radius: 50%;
+  width: 7%;
+  height: 100%;
 }
 
-.addC{
-  height: 38px;
-  color: rgb(105, 99, 99);
-  font-size: 14px;
+.LetraPost{ 
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
+  margin-top: 8px;
+  /* despues acordarse de poner un hover */
+  }
+
+.time{
+    color: #999999;
+    margin-left: 10px;
+    margin-top: 10px;
+   }
+
+   .ellipsis{
+    font-size: 2vh;
+    color: #333;
+    margin-left: 36vh;
+    margin-top: 10px;
+  }
+  
+.icons{
+    width: 100px;
+    font-size: 20px;
+    background-color: white;
+    border-color: white;
+    border-style: none;
+    margin-left: -30px;
 }
 
-.posteo{
-  height: 10px;
+.like{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.colorLike{
+  color: #000000;
+}
+
+.colorLike:active .colorLike {
+  color: red;
+}
+  
+  .icons:hover .svg-inline--fa{
+    opacity: 70%;
+  }
+  
+  .iconSave{
+    padding-left: 8vh;
+  }
+
+  .actionsFeed{
+    background-color: white;
+    border-style: none;
+    text-align: start;
+  }
+
+  .addComment{
+    color: rgb(105, 99, 99);
+    font-size: 14px;
+  }
+  
+  .feedPerfil{
+    margin-top: 60px;
+   }
+   
+
+.btn-outline-secondary{
+    color: black;
+    background-color: fff;
 }
 
 
-.fotoig{
-  width: 22vh;
+/* PERFIL */
+
+.cardPerfil{
+  margin-right: 15vh;
+  margin-top: -15px;
 }
 
-.perfilC{
- margin-top: 60px;
+.perfilFoto{
+  border-radius: 60%;
+  width: 15vh;
+  margin-right: 100px;
+}
+
+.userName{
+  font-size: 3vh;
+}
+
+.pubSS{
+  margin-right: 40px;
+}
+
+.nombre{
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.nombreU{
+  font-size: 2.5vh;
+}
+
+.lineP {
+  width: 85vh;
+  height: 1px;
+  background-color: #DBDBDB ;
+  margin-right: 120px;
+  /* margin: 4px; */
 }
 
 .containerPosts{
@@ -377,6 +389,7 @@ margin-top: 8px;
   align-items: center;
   justify-content: center;
   border-style: none;
+  margin-top: 50px;
 }
 
 .containerPosts img{
@@ -385,44 +398,14 @@ margin-top: 8px;
   object-fit: cover;
 }
 
-.nombre{
-  margin-top: 160px;
-  display: flex;
-  align-items: center;
-}
 
-.time{
-  color: #999999;
-  margin-left: 10px;
-  margin-top: 10px;
-}
+/*
+.botonC{
+  width: 10vh;
+  background-color: white;
+  border-style: none;
+}*/
 
-.profile-details {
-  margin-top: 5rem;
-}
-
-.userName{
-  font-size: 3vh;
-}
-
-.cardP{
-  margin-right: 35vh;
-}
-
-.nombreU{
-  font-size: 2.5vh;
-}
-
-.pubSS{
-  margin-right: 40px;
-}
-
-.ellipsis{
-  font-size: 2vh;
-  color: #333;
-  margin-left: 38vh;
-  margin-top: 15px;
-}
 @media (max-width: 280px) {
   .customCardRe {
     border: none;
@@ -442,7 +425,7 @@ margin-top: 8px;
     width: 15vh;
   }
   .formularioL{
-   width: 36vh;
+   width: 100%;
   }
   .registroFont{
     width: 36vh;
