@@ -9,31 +9,20 @@ html {
 /* Login */
   
 .login-photo {
-      width: 100%;
       height: 600px;
       margin-top: 12vh;
   }
 
 .borderL{
     border-radius: 0px;
-    width: 100%;
     margin:10px;
     margin-top: 12vh;
 }
 
-.imgLogin{
-  margin-top: -8vh;
-  margin-left: 45px;
-}
-
 .formularioL{
-  width: 100%;
-  max-width: 350px;
   font-size: 12px;
-  height: 4vh;
   background-color: #FAFAFA;
   border-radius: 0px;
-
 }
 
 .password-toggle-container {
@@ -44,7 +33,6 @@ html {
   position: absolute;
   top: 0;
   right: 0;
-  width: 15%;
   height: 100%;
   background: transparent;
   border: none;
@@ -59,13 +47,11 @@ html {
   background-color: #4CB5F9;
   border: #4CB5F9; 
   border-radius: 8px;
-  width: 100%;
-  height: 100%;
+  width: 100%; 
 }
 
 .loginIniciar{
   font-weight: 500;
-  font-size: 2.2vh;
 }
 
 .loginLC {
@@ -75,7 +61,6 @@ html {
 }
 
 .line {
-  width: 100%;
   height: 1px;
   background-color: #DBDBDB ;
   margin: 4px;
@@ -92,39 +77,33 @@ html {
 
 .buttonLoginFacebook{
   background-color: transparent;
-  border-color: transparent;
+  /* border-color: transparent; */
   border-style: none;
   display: flex;
   align-items: center;
-  padding-left: 50px
+  margin-left: 5vh;
 }
 
 .loginFacebook{
   background-color: transparent;
-  margin: 1vh;
+  margin-left: -1vh;
 }
 
 .letraF{
   color: #385185; 
-  width: 100%;
+  margin-left: -4vh;
   text-decoration: none;
   font-weight: 600;
 }
 
 .letraO{
-width: 100%;
 color: rgb(0, 55, 107);
-padding-left: 4vh;
 margin-bottom: -5vh;
-}
-
-.custom-card {
-  width: 100%;
-  margin-top: 1vh;
+font-size: medium;
+margin-left: -4vh;
 }
 
 .loginNC{
-  font-size: 100%;
   color: black;
 }
 
@@ -132,7 +111,6 @@ margin-bottom: -5vh;
   text-decoration: none;
   font-family:  sans-serif;
   color: #0097F6;
-  font-size: 100%;
   font-weight: 600;
 }
 
@@ -143,81 +121,102 @@ font-weight: 400;
 }
 
 .imgLoginDescargas{
-width: 100px;
 height: 40px;
-}
-
-.footer-container {
-  margin: 130px;
+margin: 5px;
 }
 
 .loginFooter{
-width: 100%;
-font-size: 0.7rem;
 color:  rgb(115, 115, 115);
-}
-
-.loginFooter2{
-font-size: 0.7rem;
-width: 100%;
-color:  rgb(115, 115, 115);
-
 }
 
 /* REGISTRO */
 
 .borderR{
   border-radius: 0px;
-  width: 100%;
-  margin:10px;
+  margin-top: 8vh;
 }
 
 .textR{
-  font-size: 17px;
   color: #807773;
-  width: 100%;
   font-weight: 600;
 }
 
 .registroFB{
   background-color: rgb(0, 149, 246)!important;
-  width: 80%!important;
+  border-radius: 8vh;
   font-weight: 600;
 } 
 
+.reLC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineR {
+  width: 37vw;
+  height: 1px;
+  background-color: #DBDBDB ;
+  margin: 4px;
+}
+.circleR{
+    width: 20px;
+    height: 9px;
+    border: 2px solid rgb(115, 115, 115);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .formularioR{
-margin-left: 12px;
+  margin-top: -1vh;
+  font-size: 12px;
+  background-color: #FAFAFA;
+  border-radius: 0px;
+  height: 3.5vh;
 }
 
 .registroFont{
+  /* margin-left: vh; */
+  text-align: center;
   font-size: 12px;
-  max-width: 100%;
-  /* padding-inline-end: 120px; */
   color: rgb(115, 115, 115);
-  display: flex;
-  justify-content: space-evenly;
 }
+
 
 .registroLinks{
   color:#18406B;
   text-decoration: none;
+  /* font-size: 12px; */
+  /* color: rgb(115, 115, 115); */
 }
 
 .buttonRegistro{
-width: 80%!important;
  font-weight: 550;
 }
 
 .registroCard{
-  margin-top: -4vh;
+  margin-top: -3vh;
   font-size: 14px;
   height: 60px;
+  border-radius: 0px;
 }
 
 .registroI{
   text-decoration: none;
   color: #0095F7;
   }
+  
+.reDescargarAPP{
+  text-align: center;
+  font-size: 100%;
+  font-weight: 400;
+  }
+
+  .imgReDescargas{
+    height: 40px;
+    margin: 5px;
+    }
 
 /* FEED */
 
@@ -227,8 +226,6 @@ width: 80%!important;
 
 .letra{
   color: black;
-  /* height: 100%; */
-  /* width: 100%; */
 }
 
 .letraP{
@@ -378,7 +375,6 @@ opacity: 50%;
   height: 1px;
   background-color: #DBDBDB ;
   margin-right: 120px;
-  /* margin: 4px; */
 }
 
 .containerPosts{
@@ -398,73 +394,314 @@ opacity: 50%;
   object-fit: cover;
 }
 
+/* mediaquires */
 
-/*
-.botonC{
-  width: 10vh;
-  background-color: white;
-  border-style: none;
-}*/
 
-@media (max-width: 280px) {
-  .customCardRe {
-    border: none;
+@media (max-width: 1399px) and (min-width: 1200px) {/*Resolucion maxima para mi monitor (19 ' )*/
+
+  /* login */
+
+  .formularioL{
+   height: 7vh;
   }
-  .imgLogin {
-    margin-left: -1vh;
+  .loginFooter{
+    margin: -4vh;
+    font-size: 2vh;
   }
-  .textR{
-    margin-left: 4vh;
-    width: 35vh;
+  
+ /* registro */
+ .formularioR{
+  height: 6vh;
+  margin-top: -3vh;
+ }
+ .registroCard{
+  margin-top: -6vh;
+}
+}
+
+@media (max-width: 1199px) and (min-width: 876px) {
+
+  /* login */
+   
+.login-photo {
+  width: 60vh!important;
+}
+
+.borderL{
+  width: 60vh!important;
+}
+
+.formularioL{
+ height: 7vh;
+}
+.loginDescargarAPP {
+  margin-right: -15vh;
+}
+.imgLoginDescargas {
+  width: 20vh;
+  margin-left: 10vh;
+  margin-right: -5vh;
+}
+.loginFooter{
+  font-size: 2vh;
+}
+
+/*Registro*/
+
+.formularioR{
+  height: 6vh;
+  margin-top: -3vh;
+ }
+ .reDescargarAPP{
+  text-align: center;
+  font-size: 100%;
+  font-weight: 400;
   }
-  .btn-primary{
-    width: 35vh!important;
-    margin-left: 4vh;
+  .imgReDescargas {
+    height: 7vh;
   }
-  .line{
-    width: 15vh;
+  .registroCard{
+   width: 50vh;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 876px) {  
+   /* login */
+   .login-photo {
+    margin-left: -15vh;
+  }
+  .loginDescargarAPP {
+    margin-right: -30vh;
+  }
+  .imgLoginDescargas {
+    margin-left: 15vh;
+    margin-right: -10vh;
+  }
+  .loginFooter{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2vh;
+    margin: 2vh;
+  }
+  /*REGISTRO*/
+  .borderR{
+   width: 50vh;
+  }
+}
+
+@media (max-width: 875px) and (min-width: 768px) {
+  /* login */
+  .login-photo{
+    display: none;
+  } 
+  .borderL{
+    width: 60vh!important;
+    margin-left: -35vh;
   }
   .formularioL{
-   width: 100%;
+   height: 7vh;
   }
-  .registroFont{
-    width: 36vh;
+  .loginDescargarAPP{
+    margin-left: -50vh;
   }
-   .btn btn-primary{
-    width: 34vh;
-   }
-   .registroT{
-    margin-top: -5vh;
-   }
-   .loginDescargarAPP{
-    margin-top: -15vh;
-   }
-   .imgLoginDescargas{
+  .imgLoginDescargas{
     width: 20vh;
-    margin-left: 3vh;
-   }
-   .imgML{
-     width: 20vh;
+    margin-left: -24vh;
+    margin-right: 25vh;
+ }
+ .loginFooter{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2vh;
+  margin: 2vh;
+}
+/*Registro*/
+.borderR{
+  width: 50vh;
+}
+.formularioR{
+  height: 6vh;
+  margin-top: -3vh;
+ }
+ .reDescargarAPP{
+  margin-left: 3vh;
+  }
+  .imgReDescargas {
+    height: 6vh;
+    display: flex;
+  }
+  .registroCard{
+   width: 50vh;
+   margin-top: -7vh;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 451px) {
+  /* login */
+  .login-photo{
+    display: none;
+  } 
+  .borderL{
+    width: 60vh!important;
+    margin-left: 10vh;
+  }
+  .formularioL{
+    height: 7vh;
+  }
+  .loginDescargarAPP{
+    margin-right: 1vw;
+  }
+  .imgLoginDescargas{
+      width: 15vh;
+      margin-right: 1vw;
    }
    .loginFooter{
     display: flex;
     flex-wrap: wrap;
-    gap: 23px;
+    font-size: 2vh;
+    margin: 10 vw;
+  }
+
+   /*Registro*/
+   .borderR{
+    width: 68vh;
+    margin-left: 4vh;
    }
-   .loginFooter2{
-    margin-left: 23vh;
+   .circleR{
+    width: 9px;
+   }
+   .formularioR{
+    height: 6.5vh;
+   }
+   .registroCard{
+    width: 68vh;
+    margin-left: 4vh;
+   }
+   .reDescargarAPP{
+    margin-right: 15vw;
+   }
+   .imgReDescargas{
+    margin-right: 15vw;
    }
 }
 
+@media (max-width: 450px) and (min-width: 281px) {
+  /* login */
+  .login-photo{
+    display: none;
+  } 
 
-@media (max-width: 449px) and (min-width: 281px) {
-  .customCardRe {
+  .borderL{
+    border: none;
+    align-items: center;
+  }
+  .formularioL{
+    height: 7vh;
+  }
+
+  .loginIniciar{
+    font-weight: 600;
+  }
+
+  .buttonLoginFacebook{
+    margin-left: 1vh;
+  }
+  
+  .letraF{
+    margin-left: 0.5vh;
+  }
+  .letraO{
+    margin-left: 1vh;
+  }
+  .loginNC{
+    font-size: 2.5vh;
+    margin-top: -5vh;
+  }
+  .loginFooter{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2vh;
+  margin: 5vw;
+  }
+
+/*Registro*/
+.borderR{
+  border: none;
+ }
+ .circleR{
+  width: 9px;
+ }
+ .formularioR{
+  height: 6vh;
+ }
+ .registroCard{
+  border: none;
+ }
+}
+
+@media (max-width: 280px) {
+  /* login */
+  .login-photo{
+    display: none;
+  } 
+  .borderL{
     border: none;
   }
-  .imgLogin {
-    /* margin-left: 5%; */
-    position: relative;
+  .formularioL{
+    margin-left: -3vh;
+    width: 34vh;
+    height: 7vh;
   }
-
-   
+  .loginIniciar{
+    margin-left: -3vh;
+    width: 34vh!important;
+    font-weight: 600;
+  }
+  .loginLC{
+    margin-left: -2vh;
+    width: 33vh!important;
+  }
+  .buttonLoginFacebook{
+    margin-left: -2vh;
+  }
+  .letraF{
+   font-size: 2.2vh;
+   margin-left: 1vh;
+  }
+  .letraO{
+   font-size: 2.2vh;
+   margin-left: 3vh;
+  }
+  .loginNC{
+    font-size: 2.2vh;
+    margin-left: -3vh;
+  }
+  .loginDescargarAPP{
+    font-size: 2.2vh;
+    margin-top: -2vh;
+  }
+  .imgLoginDescargas{
+    padding: 1.5%;
+  }
+ 
+  .loginFooter{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2vh;
+  }
+  /*Registro*/
+.borderR{
+  border: none;
+ }
+ .circleR{
+  width: 9px;
+ }
+ .formularioR{
+  height: 6vh;
+ }
+ .registroCard{
+  border: none;
+ }
 }
+
+
