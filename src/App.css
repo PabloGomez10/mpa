@@ -3,8 +3,11 @@ html {
   
   * {
     padding: 0;
-    margin: 0; }
-
+    margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    /* box-sizing: border-box; */
+ }
 
 /* Login */
   
@@ -47,7 +50,6 @@ html {
   background-color: #4CB5F9;
   border: #4CB5F9; 
   border-radius: 8px;
-  width: 100%; 
 }
 
 .loginIniciar{
@@ -77,16 +79,11 @@ html {
 
 .buttonLoginFacebook{
   background-color: transparent;
-  /* border-color: transparent; */
   border-style: none;
   display: flex;
   align-items: center;
-  margin-left: 5vh;
-}
-
-.loginFacebook{
-  background-color: transparent;
-  margin-left: -1vh;
+  justify-content: center;
+  margin-left: 4vh;
 }
 
 .letraF{
@@ -122,7 +119,6 @@ font-weight: 400;
 
 .imgLoginDescargas{
 height: 40px;
-margin: 5px;
 }
 
 .loginFooter{
@@ -220,101 +216,88 @@ color:  rgb(115, 115, 115);
 
 /* FEED */
 
-.fotoig{
-  width: 60%;
+.icoNot {
+  width: 10vh;
+  background-color: transparent;
+  border-style: none;
 }
 
 .letra{
   color: black;
+  font-size: 20px;
 }
 
+.imgC{
+  border-radius: 50%;
+  width: 4vh;
+  margin-left: 3vh;
+}
 .letraP{
   margin-left: 30px;
+  color: black;
+  font-size: 20px;
 }
 
 .letra:hover{
 opacity: 50%;  
 }
 
-.icoNot {
-  width: 10vh;
-  background-color: transparent;
-  border-style: none;
-  height: 40px;
-  font-size: 20px;
-}
-
-.imgC{
-  border-radius: 50%;
-  width: 10%;
-  height: 100%;
-  margin-left: 32px;
-}
-
 .postIG{
-  margin: 10vh;
-  width: 50%;
+  margin: 20vh;
   margin-left: 35vh;
   border-color: transparent;
-
 }
 
 .fotoResolution{
   border-radius: 50%;
-  width: 7%;
-  height: 100%;
+  width: 5vh;
 }
 
 .LetraPost{ 
-  padding-left: 10px;
+  padding-left: 4vh;
   text-decoration: none;
   color: black;
   margin-top: 8px;
   /* despues acordarse de poner un hover */
   }
 
-.time{
+  .time{
     color: #999999;
     margin-left: 10px;
     margin-top: 10px;
    }
-
+  
+   .icons{
+    width: 9vh;
+    background-color: white;
+    border-style: none;
+    /* margin-left: -30px; */
+  }
    .ellipsis{
-    font-size: 2vh;
     color: #333;
-    margin-left: 36vh;
+    margin-left: 58vh;
     margin-top: 10px;
   }
-  
-.icons{
-    width: 100px;
-    font-size: 20px;
-    background-color: white;
-    border-color: white;
-    border-style: none;
-    margin-left: -30px;
-}
+  .like{
+   background: none;
+   border: none;
+   cursor: pointer;
+   }
 
-.like{
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+  .colorLike{
+    color: #000000;
+   }
 
-.colorLike{
-  color: #000000;
-}
-
-.colorLike:active .colorLike {
-  color: red;
-}
+  .colorLike:active .colorLike {
+    color: red;
+  }
   
   .icons:hover .svg-inline--fa{
     opacity: 70%;
   }
   
   .iconSave{
-    padding-left: 8vh;
+    padding-left: 7vh;
   }
 
   .actionsFeed{
@@ -330,8 +313,10 @@ opacity: 50%;
   
   .feedPerfil{
     margin-top: 60px;
-   }
-   
+  }
+  .feedPerfil{
+    margin: 3vh;
+  }
 
 .btn-outline-secondary{
     color: black;
@@ -342,65 +327,63 @@ opacity: 50%;
 /* PERFIL */
 
 .cardPerfil{
-  margin-right: 15vh;
-  margin-top: -15px;
+  margin-right: 30vh;
 }
 
 .perfilFoto{
   border-radius: 60%;
-  width: 15vh;
-  margin-right: 100px;
+  margin-right: 10vh;
 }
 
 .userName{
-  font-size: 3vh;
+  font-size: 2vh;
+  margin-left: -4vh;
 }
 
-.pubSS{
-  margin-right: 40px;
+.pubPerfil{
+  margin-right: 3vh;
+  font-size: 2vh;
 }
 
-.nombre{
-  margin-top: 160px;
-  display: flex;
-  align-items: center;
+.pubPerfil2{
+  margin-left: 4vh;
+  font-size: 2vh;
 }
-
-.nombreU{
-  font-size: 2.5vh;
+.pubPerfil3{
+  margin-left: 8vh;
+  font-size: 2vh;
+}
+.nombrePerfil{
+  font-size: 2vh;
 }
 
 .lineP {
-  width: 85vh;
   height: 1px;
-  background-color: #DBDBDB ;
-  margin-right: 120px;
+  background-color: #DBDBDB;
 }
 
 .containerPosts{
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: repeat(2, 1fr);
-  gap: 5px; 
-  align-items: center;
-  justify-content: center;
+  gap: 1vh; 
   border-style: none;
-  margin-top: 50px;
+  margin-top: 5vh;
 }
 
 .containerPosts img{
-  width: 100%; 
   height: 100%;
   object-fit: cover;
 }
-
 /* mediaquires */
 
 
-@media (max-width: 1399px) and (min-width: 1200px) {/*Resolucion maxima para mi monitor (19 ' )*/
+@media (max-width: 1768px) and (min-width: 1200px) {/*Resolucion maxima para mi monitor (19 ' )*/
 
   /* login */
-
+   .login-photo{
+    margin-left: 35vh;
+   }
   .formularioL{
    height: 7vh;
   }
@@ -409,39 +392,57 @@ opacity: 50%;
     font-size: 2vh;
   }
   
- /* registro */
- .formularioR{
-  height: 6vh;
-  margin-top: -3vh;
- }
- .registroCard{
-  margin-top: -6vh;
-}
+  /* registro */
+  .formularioR{
+    height: 6vh;
+    margin-top: -3vh;
+   }
+  .registroCard{
+     margin-top: -6vh;
+  }
+  .letraFeed{
+    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+   }
+  /* PERFIL
+  .imgC{
+    width: 6vh;
+  }
+  .perfilFoto{
+    width: 30vh!important;
+  }
+  .userName{
+   font-size: 3vh;
+   margin-right: 5vh;
+  }
+  .pubPerfil{
+    font-size: 2.5vh;
+  }
+  .pubPerfil2{
+    font-size: 2.5vh;
+  }
+  .pubPerfil3{
+    font-size: 2.5vh;
+  }
+  .editPerfil{
+    margin-right: 3vh;
+  }
+  .nombrePerfil{
+    font-size: 2.5vh;
+  }
+  .postIG{
+    margin-left: 10vh;
+    width: 140vh!important;
+  } */
 }
 
-@media (max-width: 1199px) and (min-width: 876px) {
+@media (max-width: 1199px) and (min-width: 992px) {
 
   /* login */
-   
-.login-photo {
-  width: 60vh!important;
-}
-
-.borderL{
-  width: 60vh!important;
-}
 
 .formularioL{
  height: 7vh;
 }
-.loginDescargarAPP {
-  margin-right: -15vh;
-}
-.imgLoginDescargas {
-  width: 20vh;
-  margin-left: 10vh;
-  margin-right: -5vh;
-}
+
 .loginFooter{
   font-size: 2vh;
 }
@@ -463,26 +464,52 @@ opacity: 50%;
   .registroCard{
    width: 50vh;
   }
+  /* PERFIL */
+  .imgC{
+    width: 6vh;
+  }
+  .perfilFoto{
+    width: 30vh!important;
+  }
+  .userName{
+   font-size: 3vh;
+   margin-right: 5vh;
+  }
+  .pubPerfil{
+    font-size: 2.5vh;
+  }
+  .pubPerfil2{
+    font-size: 2.5vh;
+  }
+  .pubPerfil3{
+    font-size: 2.5vh;
+  }
+  .editPerfil{
+    margin-right: 3vh;
+  }
+  .nombrePerfil{
+    font-size: 2.5vh;
+  }
+  .postIG{
+    margin-left: 10vh;
+    width: 140vh!important;
+  }
 }
 
 @media (max-width: 991px) and (min-width: 876px) {  
    /* login */
-   .login-photo {
-    margin-left: -15vh;
-  }
-  .loginDescargarAPP {
-    margin-right: -30vh;
-  }
-  .imgLoginDescargas {
-    margin-left: 15vh;
-    margin-right: -10vh;
-  }
   .loginFooter{
     display: flex;
     flex-wrap: wrap;
     font-size: 2vh;
     margin: 2vh;
   }
+  .letraF{
+    margin-left: -3vh;
+  }
+  .letraFeed{
+    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+   }
   /*REGISTRO*/
   .borderR{
    width: 50vh;
@@ -495,26 +522,34 @@ opacity: 50%;
     display: none;
   } 
   .borderL{
-    width: 60vh!important;
     margin-left: -35vh;
   }
   .formularioL{
    height: 7vh;
   }
   .loginDescargarAPP{
-    margin-left: -50vh;
+    margin-left: -30vh;
   }
   .imgLoginDescargas{
-    width: 20vh;
-    margin-left: -24vh;
-    margin-right: 25vh;
+    /* width: 20vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35vh;
+    margin-right: 35vh;
+  }
+  .loginFooter{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2vh;
+    margin: 2vh;
+  }
+  .letraF{
+    margin-left: -3vh;
+  }
+ .letraFeed{
+  display: none; {/*LUEGO BORRAR ESTA LINEA*/}
  }
- .loginFooter{
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 2vh;
-  margin: 2vh;
-}
 /*Registro*/
 .borderR{
   width: 50vh;
@@ -539,28 +574,20 @@ opacity: 50%;
 @media (max-width: 767px) and (min-width: 451px) {
   /* login */
   .login-photo{
-    display: none;
+      display: none;
   } 
-  .borderL{
-    width: 60vh!important;
-    margin-left: 10vh;
-  }
   .formularioL{
     height: 7vh;
   }
-  .loginDescargarAPP{
-    margin-right: 1vw;
-  }
-  .imgLoginDescargas{
-      width: 15vh;
-      margin-right: 1vw;
-   }
    .loginFooter{
     display: flex;
     flex-wrap: wrap;
     font-size: 2vh;
-    margin: 10 vw;
   }
+  .letraFeed{
+    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+   }
+  
 
    /*Registro*/
    .borderR{
@@ -585,43 +612,29 @@ opacity: 50%;
    }
 }
 
-@media (max-width: 450px) and (min-width: 281px) {
+@media (max-width: 450px) and (min-width: 380px) {
   /* login */
+  .letraFeed{
+    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+   }
   .login-photo{
     display: none;
   } 
 
   .borderL{
     border: none;
-    align-items: center;
   }
   .formularioL{
     height: 7vh;
   }
-
-  .loginIniciar{
-    font-weight: 600;
-  }
-
-  .buttonLoginFacebook{
-    margin-left: 1vh;
-  }
-  
-  .letraF{
-    margin-left: 0.5vh;
-  }
-  .letraO{
-    margin-left: 1vh;
-  }
   .loginNC{
-    font-size: 2.5vh;
     margin-top: -5vh;
   }
   .loginFooter{
   display: flex;
   flex-wrap: wrap;
   font-size: 2vh;
-  margin: 5vw;
+  padding: 10vw;
   }
 
 /*Registro*/
@@ -639,8 +652,11 @@ opacity: 50%;
  }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 379px) and (min-width: 281px) {
   /* login */
+  .letraFeed{
+    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+   }
   .login-photo{
     display: none;
   } 
@@ -648,42 +664,52 @@ opacity: 50%;
     border: none;
   }
   .formularioL{
-    margin-left: -3vh;
-    width: 34vh;
     height: 7vh;
   }
-  .loginIniciar{
-    margin-left: -3vh;
-    width: 34vh!important;
-    font-weight: 600;
+  .letraF{
+    margin-right: 1vh;
+
   }
-  .loginLC{
-    margin-left: -2vh;
-    width: 33vh!important;
+  .loginNC{
+    margin-top: -5vh;
   }
+  .loginFooter{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2vh;
+  padding: 10vw;
+  }
+
+}
+@media (max-width: 280px) {
+  /* login */
+  .letraFeed{
+    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+   }
+  .login-photo{
+    display: none;
+  } 
+  .borderL{
+    border: none;
+  }
+  .formularioL{
+    height: 7vh;
+  }
+
   .buttonLoginFacebook{
     margin-left: -2vh;
   }
   .letraF{
-   font-size: 2.2vh;
+   font-size: 2.vh;
    margin-left: 1vh;
   }
   .letraO{
-   font-size: 2.2vh;
+   margin-bottom: -15vh;
    margin-left: 3vh;
   }
-  .loginNC{
-    font-size: 2.2vh;
-    margin-left: -3vh;
-  }
   .loginDescargarAPP{
-    font-size: 2.2vh;
     margin-top: -2vh;
   }
-  .imgLoginDescargas{
-    padding: 1.5%;
-  }
- 
   .loginFooter{
     display: flex;
     flex-wrap: wrap;
@@ -705,3 +731,4 @@ opacity: 50%;
 }
 
 
+/* min height */

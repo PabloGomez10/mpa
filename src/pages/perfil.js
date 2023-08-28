@@ -15,46 +15,21 @@ function Perfil() {
    return (
        <div>
            <Row>
-               <Col md={2} xs={4}>
+               <Col lg={2} md={1} sm={4} xs={4} >
                    <nav className="nav flex-column mt-4">
-                         <img src={instagram} alt="Foto de instagram"  className="fotoig " />
+                         <img src={instagram} alt="Foto de instagram" className="w-75"/>
 
                         <div className='d-flex flex-row mt-4'> 
                           <button className='icoNot'><FontAwesomeIcon icon="fa-solid fa-house-user" style={{color: "#000000",}} /></button>
                           <a className="nav-link active letra " aria-current="page" href="/feed">Inicio </a> 
                         </div>
 
-                        <div className='d-flex flex-row mt-4'> 
-                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
-                          <a className="nav-link active letra " aria-current="page" href="/feed">Buscar</a> 
-                        </div>
-
-                        <div className='d-flex flex-row mt-4'> 
-                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
-                          <a className="nav-link active letra " aria-current="page" href="/feed">Explorar</a> 
-                        </div>
-
-                        <div className='d-flex flex-row mt-4'> 
-                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
-                          <a className="nav-link active letra " aria-current="page" href="/feed">Reels</a> 
-                        </div>
-
-                        <div className='d-flex flex-row mt-4'> 
-                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
-                          <a className="nav-link active letra " aria-current="page" href="/feed">Mensajes</a> 
-                        </div>
-
-                        <div className='d-flex flex-row mt-4'> 
-                           <button  className='icoNot'> <FontAwesomeIcon icon="fa-regular fa-heart" style={{color: "#000000"}} /></button>
+                         <div className='d-flex flex-row mt-4'> 
+                           <button  className='icoNot' > <FontAwesomeIcon icon="fa-regular fa-heart" style={{color: "#000000"}} /></button>
                            <p className="nav-link letra">Notificaciones</p>
                          </div>
 
-                        <div className='d-flex flex-row mt-2'> 
-                          <button className='icoNot'><FontAwesomeIcon icon="fa-brands fa-js" /></button>
-                          <a className="nav-link active letra " aria-current="page" href="/feed">Crear</a> 
-                        </div>
-
-                         <div className='d-flex flex-row mt-4'>
+                          <div className='d-flex flex-row mt-4'>
                            <img src={perfil} className="card-img-top imgC" alt="foto del post"/>
                            <a className="nav-link letra letraP" href="/perfil">Perfil</a>
                           </div>
@@ -62,28 +37,29 @@ function Perfil() {
                    </nav>
                </Col>
 
-               <Col md={10} xs={8}> 
+               <Col lg={10} md={11} sm={10} xs={10}> 
                    <div className="card">
                          <div className="profile-container d-flex justify-content-center cardPerfil"> 
                              <div className="profile-header mt-5">
-                                   <div className="mt-5">
+                                   <div>
                                          <div className="d-flex align-items-center">
-                                             <img src={perfil} alt="foto del perfil" className="perfilFoto" />
-                                             <div className="d-flex flex-column ml-3">
+                                             <img src={perfil} alt="foto del perfil" className="perfilFoto w-25" />
+                                             <div>
                                                    <div className="d-flex align-items-center justify-content-around">
-                                                       <h2 className="profile-username mr-5 userName">Cosmefulatino.ok</h2>
-                                                       <button className="btn btn-outline-secondary">Editar Perfil</button>
-                                                       <button className="btn ml-3">
+                                                       <h2 className="profile-username userName">Cosmefulatino.ok</h2>
+                                                       <button className="btn btn-outline-secondary editPerfil">Editar Perfil</button>
+                                                       <button className="btn btn-outline-secondary">Ver archivo</button>
+                                                       <button className="btn">
                                                          <i className="fas fa-cog"></i>
                                                        </button>
                                                    </div>
                                                     <div className="d-flex  mt-3">
-                                                       <span className="pubSS "><b>6</b> Publicaciones</span>
-                                                       <span className="pubSS "><b>5420</b> Seguidores</span>
-                                                       <span className="pubSS "><b>1000</b> Seguidos</span>
+                                                       <span className="pubPerfil"><b>6</b> Publicaciones</span>
+                                                       <span className="pubPerfil2"><b>5420</b> Seguidores</span>
+                                                       <span className="pubPerfil3"><b>1000</b> Seguidos</span>
                                                     </div>
                                                    <div className="profile-name mt-3">
-                                                       <h4 className='nombreU'>Cosme Fulatino</h4>
+                                                       <h4 className='nombrePerfil'>Cosme Fulatino</h4>
                                                    </div>
                                                    
                                              </div>
@@ -93,19 +69,19 @@ function Perfil() {
                          </div>
  
                          <div className='loginLC mt-5'>
-                            <div className='lineP'></div>
+                            <div className='lineP w-75'></div>
                          </div>
-                         <div className="card postIG containerPosts">
-                             <img src={cosme} className="card-img-top w-100" alt="foto del post"/>
-                             <img src={cosme1} className="card-img-top w-100" alt="foto del post"/>
-                             <img src={cosme2} className="card-img-top w-100" alt="foto del post"/>
-                             <img src={cosme3} className="card-img-top w-100" alt="foto del post"/>
-                             <img src={cosme4} className="card-img-top w-100" alt="foto del post"/>
-                             <img src={cosme5} className="card-img-top w-100" alt="foto del post"/>
+                         <div className="card postIG containerPosts w-50">
+                             <img src={cosme} className="card-img-top" alt="foto del post"/>
+                             <img src={cosme1} className="card-img-top" alt="foto del post"/>
+                             <img src={cosme2} className="card-img-top" alt="foto del post"/>
+                             <img src={cosme3} className="card-img-top" alt="foto del post"/>
+                             <img src={cosme4} className="card-img-top" alt="foto del post"/>
+                             <img src={cosme5} className="card-img-top" alt="foto del post"/>
                          </div>
 
                          <div className='footer-container mt-5'>
-                   <footer className='d-flex justify-content-evenly loginFooter '>
+                   <footer className='d-flex justify-content-evenly loginFooter'>
                        <p>Meta</p>
                        <p>Información</p>
                        <p>Blog</p>
@@ -121,8 +97,8 @@ function Perfil() {
                        <p>Meta verified</p>
                    </footer>
                    
-                   <div className='mb-5'>
-                     <footer className='d-flex loginFooter2 justify-content-center' >
+                   <div>
+                     <footer className='d-flex  justify-content-center loginFooter' >
                         <p className='p-3'>Español</p>
                         <p className='p-3'>© 2023 Instagram from Meta</p>
                       </footer>
