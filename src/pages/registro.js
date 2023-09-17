@@ -16,33 +16,33 @@ function Registro () {
 
     <div className="container">
       <Row className='justify-content-center'>
-        <Col md={4}>
-          <Card  className="mb-5 borderR">
+        <Col xl={4} lg={5} md={6} sm={10} className='container-fluid'>
+          <Card  className="mb-5 borderR w-100 d-flex justify-content-center">
             <Card.Body>
               <form>
-                <div className=''> 
+                <div className='p-4'> 
                   <img src={instagram} className='w-100' alt="Instragram" />
                   <p className='text-center textR w-100'> Regístrate para ver fotos y videos de tus amigos.</p>
-                  <div className="form-group w-100 registroFB">
-                    <button type="submit" href='' className="btn btn-primary ">Iniciar Sesion con Facebook</button>
+                  <div className="form-group registroFB">
+                    <button type="submit" href='' className="btn btn-primary w-100">Iniciar Sesion con Facebook</button>
                   </div>
-                   <div className='reLC mt-4 w-100'>
+                   <div className='d-flex justify-content-center aling-item-center mt-4 w-100'>
                      <div className='lineR'></div>
                      <div className='circleR'></div>
                      <div className='lineR'></div>
                    </div>
 
-                  <div className='mt-3'>
+                  <div className='mt-3 form-group w-100'>
                     <label for="exampleInputEmail1" className='form-label'></label>
                     <input type="email" className="form-control d-block formularioR" placeholder="Numero de celular o correo electrónico" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                   </div> 
 
-                  <div className=''>
+                  <div className='form-group w-100'>
                     <label for="exampleInputEmail1" className='form-label'></label>
                     <input type="email" className="form-control d-block formularioR" placeholder="Nombre Completo" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                   </div> 
 
-                  <div className=''>
+                  <div className='form-group w-100'>
                     <label for="exampleInputEmail1" className='form-label'></label>
                     <input type="email" className="form-control d-block formularioR" placeholder="Nombre de usuario"id="exampleInputEmail1" aria-describedby="emailHelp"/>
                   </div> 
@@ -72,8 +72,8 @@ function Registro () {
                                 <span> y la  </span> 
                                 <a className='registroLinks' > Política de cookies.</a>
                              </div>
-                             <div className=' mt-3 mb-2 w-100'> 
-                               <button type="submit" className="btn btn-primary buttonRegistro">Registrarte</button>
+                             <div className=' mt-3 mb-2'> 
+                               <button type="submit" className="btn btn-primary w-100">Registrarte</button>
                              </div>
                      </div>
                 </div>
@@ -82,23 +82,23 @@ function Registro () {
             </Card.Body>
           </Card>
           
-          <Card  className="registroCard">
+          <Card  className="borderR w-100 d-flex justify-content-center mt-5">
              <Card.Body className='text-center'>
                  <p>¿Tienes una cuenta? <a className='registroI' href='/'> Inicia sesión</a></p>
              </Card.Body>
           </Card>
-
-          
-              <h3 className='reDescargarAPP mt-3'> Descarga la app.</h3>
-              <div className='d-flex justify-content-evenly'>
-                <img src={playstore} className='imgReDescargas'/>
-                <img src={microsoft} className='imgReDescargas'/> 
+           <div className='mb-5'>
+              <h3 className='reDescargarAPP mt-4'> Descarga la app.</h3>
+               <div className='d-flex justify-content-evenly'>
+                  <img src={playstore} className='imgReDescargas'/>
+                  <img src={microsoft} className='imgReDescargas'/> 
+               </div>
            </div>
 
         </Col>
       </Row>
       <div className='footer-container'>
-                   <footer className='d-flex justify-content-evenly loginFooter'>
+                   <footer className='d-flex justify-content-evenly loginFooter gap-2'>
                        <p>Meta</p>
                        <p>Información</p>
                        <p>Blog</p>
@@ -114,8 +114,8 @@ function Registro () {
                        <p>Meta verified</p>
                    </footer>
                    
-                   <div className=''>
-                     <footer className='d-flex loginFooter2 justify-content-evenly' >
+                   <div>
+                     <footer className='d-flex loginFooter justify-content-evenly' >
                         <p className='p-3'>Español</p>
                         <p className='p-3'>© 2023 Instagram from Meta</p>
                       </footer>

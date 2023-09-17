@@ -14,24 +14,24 @@ function Login() {
   };
   
   return (
-    <div className="container d-flex justify-content-center aling-item-center flex-column">
-      <Row className="d-flex justify-content-center aling-item-center">
+    <div className="container">
+      <Row>
   
         <Col xl={4} lg={6} md={6}>
           <img src={ig} alt="Foto de instagram"  className="login-photo w-100" />
         </Col>
 
-        <Col xl={4} lg={5} md={6} sm={10} className='container d-flex justify-content-center aling-item-center flex-column'>
+        <Col xl={4} lg={5} md={6} sm={10} className='container-fluid'>
              <div>
-               <Card className='borderL w-100'>
+               <Card className='borderL w-100 d-flex justify-content-center'>
                    <Card.Body>
                        <form>
                            <div className='p-4'> 
                                <img src={instagram} className='w-100' alt="Instragram"/>
         
-                               <div className="mt-1 mb-2 form-group w-100 h-100">
+                               <div className="mt-1 mb-2 form-group w-100" >
                                  <label for="exampleInputEmail1" className="form-label"></label>
-                                 <input type="email" className="form-control d-block formularioL" id="exampleInputEmail1"  placeholder="Teléfono, usuario o correo electrónico" aria-describedby="emailHelp"/>
+                                 <input type="email" className="form-control d-block formularioL container-fluid" id="exampleInputEmail1"  placeholder="Teléfono, usuario o correo electrónico" aria-describedby="emailHelp"/>
                                </div> 
                                
                                  <div className="password-toggle-container">
@@ -42,7 +42,7 @@ function Login() {
                                     </button>
                                  </div>
                                  
-                                 <div className="form-group mt-3">
+                                 <div className="form-group mt-3 w-100">
                                    <button type="submit" className="btn btn-primary w-100 loginIniciar">Iniciar Sesión</button>
                                  </div>
 
@@ -76,8 +76,8 @@ function Login() {
                  </Card.Body>
              </Card>
 
-               <div>
-                 <h3 className='loginDescargarAPP'> Descarga la app.</h3>
+               <div >
+                 <h3 className='loginDescargarAPP '> Descarga la app.</h3>
                  <div className='d-flex justify-content-center gap-2'> 
                    <img src={playstore} className='imgLoginDescargas'/>
                    <img src={microsoft} className='imgLoginDescargas'/> 
@@ -86,8 +86,6 @@ function Login() {
 
         </Col>
        </Row>
-       
-       <a className='letra letraFeed' href='/feed'> feed </a>   {/* LUEGO BORRAR ESTA LINEA */}
 
                <div className='mt-5'>
                    <footer className='d-flex justify-content-evenly loginFooter mt-5 gap-2'> 

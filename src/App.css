@@ -4,261 +4,239 @@ html {
   * {
     padding: 0;
     margin: 0;
-    max-height: 100%;
-    max-width: 100%;
-    /* box-sizing: border-box; */
  }
 
-/* Login */
-  
-.login-photo {
+   .login-photo {
       height: 600px;
       margin-top: 12vh;
-  }
+   }
 
-.borderL{
+   .borderL{
+     border-radius: 0px;
+     margin:10px;
+     margin-top: 12vh;
+    }
+
+    
+  .formularioL{
+    font-size: 12px;
+    background-color: #FAFAFA;
     border-radius: 0px;
-    margin:10px;
-    margin-top: 12vh;
-}
-
-.formularioL{
-  font-size: 12px;
-  background-color: #FAFAFA;
-  border-radius: 0px;
-}
-
-.password-toggle-container {
-  position: relative;
-}
-
-.toggle-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 11px;
-  margin-right: 10px;
-  margin-top: -2px;
-}
-
-.btn.btn-primary{
-  background-color: #4CB5F9;
-  border: #4CB5F9; 
-  border-radius: 8px;
-}
-
-.loginIniciar{
-  font-weight: 500;
-}
-
-.loginLC {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.line {
-  height: 1px;
-  background-color: #DBDBDB ;
-  margin: 4px;
-}
-
-.circle {
-  width: 15px;
-  height: 9px;
-  border: 2px solid rgb(115, 115, 115);
-  border-radius: 50%;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.buttonLoginFacebook{
-  background-color: transparent;
-  border-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 4vh;
-}
-
-.letraF{
-  color: #385185; 
-  margin-left: -4vh;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.letraO{
-color: rgb(0, 55, 107);
-margin-bottom: -5vh;
-font-size: medium;
-margin-left: -4vh;
-}
-
-.loginNC{
-  color: black;
-}
-
-.loginRE{
-  text-decoration: none;
-  font-family:  sans-serif;
-  color: #0097F6;
-  font-weight: 600;
-}
-
-.loginDescargarAPP{
-text-align: center;
-font-size: 100%;
-font-weight: 400;
-}
-
-.imgLoginDescargas{
-height: 40px;
-}
-
-.loginFooter{
-color:  rgb(115, 115, 115);
-}
-
-/* REGISTRO */
-
-.borderR{
-  border-radius: 0px;
-  margin-top: 8vh;
-}
-
-.textR{
-  color: #807773;
-  font-weight: 600;
-}
-
-.registroFB{
-  background-color: rgb(0, 149, 246)!important;
-  border-radius: 8vh;
-  font-weight: 600;
-} 
-
-.reLC {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lineR {
-  width: 37vw;
-  height: 1px;
-  background-color: #DBDBDB ;
-  margin: 4px;
-}
-.circleR{
-    width: 20px;
+  }
+  .password-toggle-container {
+    position: relative;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 11px;
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+  
+  .btn.btn-primary{
+    background-color: #4CB5F9;
+    border: #4CB5F9; 
+    border-radius: 8px;
+  }
+  
+  .loginIniciar{
+    font-weight: 500;
+  }
+  
+  .loginLC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .line {
+    height: 1px;
+    background-color: #DBDBDB ;
+    margin: 4px;
+  }
+  
+  .circle {
+    width: 15px;
     height: 9px;
     border: 2px solid rgb(115, 115, 115);
     border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.formularioR{
-  margin-top: -1vh;
-  font-size: 12px;
-  background-color: #FAFAFA;
-  border-radius: 0px;
-  height: 3.5vh;
-}
-
-.registroFont{
-  /* margin-left: vh; */
-  text-align: center;
-  font-size: 12px;
-  color: rgb(115, 115, 115);
-}
-
-
-.registroLinks{
-  color:#18406B;
-  text-decoration: none;
-  /* font-size: 12px; */
-  /* color: rgb(115, 115, 115); */
-}
-
-.buttonRegistro{
- font-weight: 550;
-}
-
-.registroCard{
-  margin-top: -3vh;
-  font-size: 14px;
-  height: 60px;
-  border-radius: 0px;
-}
-
-.registroI{
-  text-decoration: none;
-  color: #0095F7;
   }
   
-.reDescargarAPP{
+  .buttonLoginFacebook{
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .letraF{
+    color: #385185; 
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .letraO{
+  color: rgb(0, 55, 107);
+  margin-bottom: -5vh;
+  font-size: medium;
+  }
+  
+  .loginNC{
+    color: black;
+  }
+  
+  .loginRE{
+    text-decoration: none;
+    font-family:  sans-serif;
+    color: #0097F6;
+    font-weight: 600;
+  }
+  
+  .loginDescargarAPP{
   text-align: center;
   font-size: 100%;
   font-weight: 400;
   }
+  
+  .imgLoginDescargas{
+  height: 40px;
+  }
+  
+  .loginFooter{
+  color:  rgb(115, 115, 115);
+  }
+  
+  .borderR{
+    border-radius: 0px;
+    margin-top: 8vh;
+  }
+  
+  .textR{
+    color: #807773;
+    font-weight: 600;
+  }
+  
+  .registroFB{
+    background-color: rgb(0, 149, 246)!important;
+    border-radius: 8vh;
+    font-weight: 600;
+  } 
+  
+  .lineR {
+    width: 37vw;
+    height: 1px;
+    background-color: #DBDBDB ;
+    margin: 4px;
+  }
+  .circleR{
+      width: 20px;
+      height: 9px;
+      border: 2px solid rgb(115, 115, 115);
+      border-radius: 50%;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  .formularioR{
+    margin-top: -1vh;
+    font-size: 12px;
+    background-color: #FAFAFA;
+    border-radius: 0px;
+    height: 3.5vh;
+  }
+  
+  .registroFont{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+  }
+  
+  .registroLinks{
+    color:#18406B;
+    text-decoration: none;
+  }
+  
+  .buttonRegistro{
+   font-weight: 550;
+  }
+  
+  .registroI{
+    text-decoration: none;
+    color: #0095F7;
+    }
+    
+  .reDescargarAPP{
+    text-align: center;
+    font-size: 100%;
+    font-weight: 400;
+    }
+
+
 
   .imgReDescargas{
     height: 40px;
     margin: 5px;
     }
 
-/* FEED */
+    svg.svg-inline--fa.fa-house-user,svg.svg-inline--fa.fa-heart,svg.svg-inline--fa.fa-ellipsis-h.ellipsis,svg.svg-inline--fa.fa-comment.fa-flip-horizontal.instagram-btn.comment-btn,svg.svg-inline--fa.fa-paper-plane,svg.svg-inline--fa.fa-bookmark{
+      font-size: 1.3rem;
+    }
+    .iconIG{
+      display: none;
+    }
+  
+  
+  .icoNot {
+    margin-left: 4vh;
+    background-color: transparent;
+    border-style: none;
+  }
 
-.icoNot {
-  width: 10vh;
-  background-color: transparent;
-  border-style: none;
-}
+ .letra{
+   margin-left: 4vh;
+   color: black;
+   font-size: 20px;
+  }
 
-.letra{
-  color: black;
-  font-size: 20px;
-}
+ .imgC{
+   border-radius: 50%;
+   width: 4vh;
+   margin-left: 3vh;
+  }
+  .letraP{
+   margin-left: 3vh;
+   color: black;
+   font-size: 20px;
+  }
 
-.imgC{
-  border-radius: 50%;
-  width: 4vh;
-  margin-left: 3vh;
-}
-.letraP{
-  margin-left: 30px;
-  color: black;
-  font-size: 20px;
-}
+  .letra:hover{
+    opacity: 50%;  
+  }
 
-.letra:hover{
-opacity: 50%;  
-}
+  .postIG{
+    margin-left: 15vh!important;
+  }
+  
+  .fotoResolution{
+    border-radius: 50%;
+    width: 5vh;
+  }
 
-.postIG{
-  margin: 20vh;
-  margin-left: 35vh;
-  border-color: transparent;
-}
-
-.fotoResolution{
-  border-radius: 50%;
-  width: 5vh;
-}
-
-.LetraPost{ 
-  padding-left: 4vh;
-  text-decoration: none;
-  color: black;
-  margin-top: 8px;
-  /* despues acordarse de poner un hover */
+  .LetraPost{ 
+    padding-left: 4vh;
+    text-decoration: none;
+    color: black;
+    margin-top: 8px;
   }
 
   .time{
@@ -266,32 +244,23 @@ opacity: 50%;
     margin-left: 10px;
     margin-top: 10px;
    }
-  
    .icons{
-    width: 9vh;
     background-color: white;
     border-style: none;
-    /* margin-left: -30px; */
+    margin: auto 1vh;
   }
    .ellipsis{
     color: #333;
-    margin-left: 58vh;
-    margin-top: 10px;
   }
   .like{
    background: none;
    border: none;
    cursor: pointer;
    }
-
-  .colorLike{
-    color: #000000;
+   .like:active{
+    background-color: red;
    }
 
-  .colorLike:active .colorLike {
-    color: red;
-  }
-  
   .icons:hover .svg-inline--fa{
     opacity: 70%;
   }
@@ -310,164 +279,174 @@ opacity: 50%;
     color: rgb(105, 99, 99);
     font-size: 14px;
   }
-  
-  .feedPerfil{
-    margin-top: 60px;
+  .letraFooter{
+    font-size: 1.5vh;
+    margin-left: 14vw;
   }
-  .feedPerfil{
-    margin: 3vh;
+  .menuIG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18rem;
+    height: 100vh;
+    border-right: 1px solid #ccc;
   }
-
-.btn-outline-secondary{
+  .userName{
     color: black;
-    background-color: fff;
-}
-
-
-/* PERFIL */
-
-.cardPerfil{
-  margin-right: 30vh;
-}
-
-.perfilFoto{
-  border-radius: 60%;
-  margin-right: 10vh;
-}
-
-.userName{
-  font-size: 2vh;
-  margin-left: -4vh;
-}
-
-.pubPerfil{
-  margin-right: 3vh;
-  font-size: 2vh;
-}
-
-.pubPerfil2{
-  margin-left: 4vh;
-  font-size: 2vh;
-}
-.pubPerfil3{
-  margin-left: 8vh;
-  font-size: 2vh;
-}
-.nombrePerfil{
-  font-size: 2vh;
-}
-
-.lineP {
-  height: 1px;
-  background-color: #DBDBDB;
-}
-
-.containerPosts{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1vh; 
-  border-style: none;
-  margin-top: 5vh;
-}
-
-.containerPosts img{
-  height: 100%;
-  object-fit: cover;
-}
-/* mediaquires */
-
-
-@media (max-width: 1768px) and (min-width: 1200px) {/*Resolucion maxima para mi monitor (19 ' )*/
-
-  /* login */
-   .login-photo{
-    margin-left: 35vh;
-   }
-  .formularioL{
-   height: 7vh;
+  } 
+  .imgUser{
+    border-radius: 50%;
+    width: 4vh;
+    margin-left:30vh;
+    margin-right: 5vh;
   }
+  .cardPerfil{
+    margin-right: 30vh;
+  }
+  
+  .perfilFoto{
+    border-radius: 50%;
+    margin-right: 10vh;
+  }
+  
+  .userName{
+    font-size: 2vh;
+    margin-left: -4vh;
+  }
+  .editPerfil{
+    background-color: #E2E9E8;
+  }
+  
+  .pubPerfil{
+    margin-right: 3vh;
+    font-size: 2vh;
+  }
+  
+  .pubPerfil2{
+    margin-left: 4vh;
+    font-size: 2vh;
+  }
+  .pubPerfil3{
+    margin-left: 8vh;
+    font-size: 2vh;
+  }
+  .nombrePerfil{
+    font-size: 2vh;
+  }
+  .svg-inline--fa {
+    font-size: 3vh;
+  }
+  
+  .lineP {
+    height: 1px;
+    background-color: #DBDBDB;
+  }
+  
+  .containerPosts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1vh; 
+    border-style: none;
+    margin-top: 5vh;
+    margin-left: 30vh;
+  }
+  
+  .containerPosts img{
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+
+@media (max-width: 1768px) and (min-width: 1200px) {
+
+   .login-photo{
+    margin-left: 25vh;
+   }
   .loginFooter{
     margin: -4vh;
     font-size: 2vh;
   }
   
-  /* registro */
   .formularioR{
     height: 6vh;
-    margin-top: -3vh;
+    margin-top: -2vh;
    }
-  .registroCard{
-     margin-top: -6vh;
+
+  .menuIG {
+    width: 15rem;
   }
-  .letraFeed{
-    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
-   }
-  /* PERFIL
   .imgC{
-    width: 6vh;
+    width: 4vh;
   }
+  .postIG{
+    margin-left: 50vh;
+  }
+  .letraFooter{
+    margin-left: 1vh;
+    font-size: 1.5vh;
+    width: 30vw;
+  }
+  .imgUser{
+    margin-left: 10vh;
+  }
+  
   .perfilFoto{
-    width: 30vh!important;
+    width: 30vh;
   }
   .userName{
    font-size: 3vh;
    margin-right: 5vh;
   }
-  .pubPerfil{
-    font-size: 2.5vh;
-  }
-  .pubPerfil2{
-    font-size: 2.5vh;
-  }
-  .pubPerfil3{
+  .pubPerfil,.pubPerfil2,.pubPerfil3,.nombrePerfil{
     font-size: 2.5vh;
   }
   .editPerfil{
     margin-right: 3vh;
   }
-  .nombrePerfil{
-    font-size: 2.5vh;
+  .footerP{
+    padding: 10vh;
   }
-  .postIG{
-    margin-left: 10vh;
-    width: 140vh!important;
-  } */
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
 
-  /* login */
+  .formularioL{
+   height: 5vh;
+  }
+  .loginFooter{
+    font-size: 2vh;
+  }
 
-.formularioL{
- height: 7vh;
-}
-
-.loginFooter{
-  font-size: 2vh;
-}
-
-/*Registro*/
-
-.formularioR{
-  height: 6vh;
-  margin-top: -3vh;
+ .formularioR{
+   height: 6vh;
+   margin-top: -3vh;
+  }
+   
+  .menuIG {
+    width: 5rem;
+  }
+  .imgIG{
+    display: none;
+  }
+  .iconIG{
+    display: block;
+  }
+ .svg-inline--fa {
+    font-size: 2rem;
  }
- .reDescargarAPP{
-  text-align: center;
-  font-size: 100%;
-  font-weight: 400;
-  }
-  .imgReDescargas {
-    height: 7vh;
-  }
-  .registroCard{
-   width: 50vh;
-  }
-  /* PERFIL */
   .imgC{
     width: 6vh;
   }
+  .letra,.letraP,.letraFooter,.imgUser,.userName{
+    display: none!important;
+  }
+  .postIG{
+    margin: auto 15rem;
+  }
+
+
   .perfilFoto{
     width: 30vh!important;
   }
@@ -475,68 +454,82 @@ opacity: 50%;
    font-size: 3vh;
    margin-right: 5vh;
   }
-  .pubPerfil{
-    font-size: 2.5vh;
-  }
-  .pubPerfil2{
-    font-size: 2.5vh;
-  }
-  .pubPerfil3{
+  .pubPerfil.pubPerfil2.pubPerfil3.nombrePerfil{
     font-size: 2.5vh;
   }
   .editPerfil{
     margin-right: 3vh;
   }
-  .nombrePerfil{
-    font-size: 2.5vh;
-  }
-  .postIG{
-    margin-left: 10vh;
-    width: 140vh!important;
-  }
 }
 
 @media (max-width: 991px) and (min-width: 876px) {  
-   /* login */
   .loginFooter{
     display: flex;
     flex-wrap: wrap;
     font-size: 2vh;
-    margin: 2vh;
   }
-  .letraF{
-    margin-left: -3vh;
-  }
-  .letraFeed{
-    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+   .formularioR{
+    height: 6vh;
+    margin-top: -3vh;
    }
-  /*REGISTRO*/
-  .borderR{
-   width: 50vh;
+
+   .menuIG {
+    width: 5rem;
+    margin-left: -3vw;
   }
+   .imgIG{
+    display: none;
+  }
+  .iconIG{
+    display: block;
+  }
+ .svg-inline--fa {
+    font-size: 2rem;
+}
+  .imgC{
+    width: 2vh;
+  }
+  .letra,.letraP,.letraFooter,.imgUser,.userName{
+    display: none!important;
+  }
+  .postIG{
+    margin: auto 10rem;
+  }
+
+  .perfilFoto{
+    width: 30vh;
+    margin-left: 30vh;
+  }
+  .userName{
+   font-size: 3vh;
+   margin-right: 5vh;
+  }
+  .pubPerfil.pubPerfil2.pubPerfil3.nombrePerfil{
+    font-size: 2.5vh;
+  }
+  .editPerfil{
+    margin-right: 3vh;
+    height: 6vh;
+    font-size: 2vh;
+    white-space: nowrap;
+  }
+
 }
 
 @media (max-width: 875px) and (min-width: 768px) {
-  /* login */
   .login-photo{
     display: none;
   } 
   .borderL{
-    margin-left: -35vh;
+   margin-left: -10vh;
   }
-  .formularioL{
-   height: 7vh;
-  }
+
   .loginDescargarAPP{
-    margin-left: -30vh;
+    margin-left: -18vh;
   }
   .imgLoginDescargas{
-    /* width: 20vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -35vh;
-    margin-right: 35vh;
+    margin-left: -10vh;
+    margin-right: 10vh; 
   }
   .loginFooter{
     display: flex;
@@ -544,88 +537,143 @@ opacity: 50%;
     font-size: 2vh;
     margin: 2vh;
   }
-  .letraF{
-    margin-left: -3vh;
+
+  .formularioR{
+   height: 5vh;
   }
- .letraFeed{
-  display: none; {/*LUEGO BORRAR ESTA LINEA*/}
- }
-/*Registro*/
-.borderR{
-  width: 50vh;
+
+  .menuIG {
+    width: 5rem;
+    margin-left: -1vw;
+  }
+  .imgIG{
+    display: none;
+  }
+  .iconIG{
+    display: block;
+  }
+ .svg-inline--fa {
+    font-size: 2rem;
+
 }
-.formularioR{
-  height: 6vh;
-  margin-top: -3vh;
- }
- .reDescargarAPP{
-  margin-left: 3vh;
+  .imgC{
+    /* width: 6vh; */
+    margin-left: 1vh
   }
-  .imgReDescargas {
+  .letra,.letraP,.letraFooter,.imgUser,.userName{
+    display: none!important;
+  }
+  .postIG{
+    margin: auto 10rem;
+  }
+
+  .perfilFoto{
+    width: 30vh;
+    margin-left: 30vh;
+  }
+  .userName{
+   font-size: 3vh;
+   margin-right: 5vh;
+  }
+  .pubPerfil.pubPerfil2.pubPerfil3.nombrePerfil{
+    font-size: 5vh;
+  }
+  .editPerfil{
+    margin-right: 3vh;
     height: 6vh;
-    display: flex;
+    font-size: 2vh;
+    white-space: nowrap;
   }
-  .registroCard{
-   width: 50vh;
-   margin-top: -7vh;
-  }
+
 }
 
 @media (max-width: 767px) and (min-width: 451px) {
-  /* login */
+
   .login-photo{
       display: none;
   } 
-  .formularioL{
-    height: 7vh;
-  }
    .loginFooter{
     display: flex;
     flex-wrap: wrap;
     font-size: 2vh;
   }
-  .letraFeed{
-    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
-   }
-  
 
-   /*Registro*/
-   .borderR{
-    width: 68vh;
-    margin-left: 4vh;
-   }
    .circleR{
     width: 9px;
    }
    .formularioR{
-    height: 6.5vh;
+    height: 6vh;
    }
-   .registroCard{
-    width: 68vh;
-    margin-left: 4vh;
-   }
-   .reDescargarAPP{
-    margin-right: 15vw;
-   }
-   .imgReDescargas{
-    margin-right: 15vw;
-   }
+   .letra,.letraP{
+    display: none;
+  }
+  .postIG{
+    margin: 6rem;
+    margin-top: 10vh!important;
+  }
+  .imgIG{
+    display: none;
+  }
+  .iconIG{
+    display: block;
+  }
+  svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    font-size: 4vh;
+    display: flex;
 }
-
-@media (max-width: 450px) and (min-width: 380px) {
-  /* login */
-  .letraFeed{
-    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+   .menuIG {
+    position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    height: 3rem;
+    padding: 0 50vw;
+    border-bottom: 5rem solid #fff;
+    gap: 20vw;
+    margin-top: -3vh;
+  } 
+   .imgC{
+    height: 6vh;
    }
+   .linea{
+    display: flex;
+   }
+   .imgUser,.userName,.letraFooter{
+    display: none!important;
+   }
+
+   .perfilFoto{
+    width: 20vh;
+    margin-left: 30vh;
+  }
+  .userName{
+   font-size: 3vh;
+   margin-right: 5vh;
+  }
+  .pubPerfil.pubPerfil2.pubPerfil3.nombrePerfil{
+    font-size: 5vh;
+  }
+  .editPerfil{
+    margin-right: 3vh;
+    height: 6vh;
+    font-size: 2vh;
+    white-space: nowrap;
+  }
+  .cardPerfil{
+    margin-top: 12vh;
+  }
+
+  }
+
+@media (max-width: 450px) and (min-width: 400px) {
+
   .login-photo{
     display: none;
   } 
-
   .borderL{
     border: none;
-  }
-  .formularioL{
-    height: 7vh;
   }
   .loginNC{
     margin-top: -5vh;
@@ -637,26 +685,76 @@ opacity: 50%;
   padding: 10vw;
   }
 
-/*Registro*/
-.borderR{
-  border: none;
- }
+  .borderR{
+    border: none;
+  }
  .circleR{
-  width: 9px;
+   width: 9px;
  }
  .formularioR{
-  height: 6vh;
+   height: 5vh;
  }
- .registroCard{
-  border: none;
+ .letra,.letraP{
+  display: none;
  }
+.postIG{
+  margin: 4rem!important;
+  margin-top: 10vh!important;
+}
+.imgIG,.time{
+  display: none;
+}
+.iconIG{
+  display: block;
+}
+.svg-inline--fa {
+  overflow: visible;
+  font-size: 3vh;
+  display: flex;
+}
+ .menuIG {
+  position: fixed;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+  height: 3rem;
+  padding: 0 50vw;
+  border-bottom: 5rem solid #fff;
+  gap: 4vw;
+} 
+ .linea{
+  display: flex;
+ }
+ .imgUser,.userName,.letraFooter{
+  display: none!important;
+ }
+
+ .perfilFoto{
+  width: 15vh;
+  margin-left: 30vh;
+ }
+ .cardPerfil{
+  margin-top: 12vh;
 }
 
-@media (max-width: 379px) and (min-width: 281px) {
-  /* login */
-  .letraFeed{
-    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
-   }
+.pubPerfil.pubPerfil2.pubPerfil3.nombrePerfil{
+  font-size: 5vh;
+}
+.editPerfil{
+  margin-right: 3vh;
+  height: 6vh;
+  font-size: 2vh;
+  white-space: nowrap;
+}
+.containerPosts img {
+ 
+}
+}
+
+
+@media (max-width: 400px) and (min-width: 281px) {
+
   .login-photo{
     display: none;
   } 
@@ -666,9 +764,16 @@ opacity: 50%;
   .formularioL{
     height: 7vh;
   }
+  .buttonLoginFacebook{
+    margin-left: -4vw;
+  }
   .letraF{
-    margin-right: 1vh;
-
+    white-space: nowrap;
+    margin-left: 1vh;
+  }
+  .letraO{
+    margin-left: 3vw;
+    white-space: nowrap;
   }
   .loginNC{
     margin-top: -5vh;
@@ -678,13 +783,81 @@ opacity: 50%;
   flex-wrap: wrap;
   font-size: 2vh;
   padding: 10vw;
+  }
+  .borderR{
+    border: none;
+  }
+  .formularioR{
+    height: 6vh;
+  }
+  .circleR{
+    width: 1vh;
+  }
+
+  .letra,.letraP,.letraFooter,.imgUser,.userName,.time,.imgIG{
+    display: none!important;
+  }
+  .linea{
+    display: flex;
+  }
+  .menuIG {
+    position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    height: 2rem;
+    padding: 0 50vw;
+    border-bottom: 5rem solid #fff;
+    gap: 8vw;
+  } 
+  .postIG{
+    margin-left: 11vw!important;
+    margin-top: 10vh!important;
+    width: 80vw!important;
+  }
+  .iconIG{
+    display: block;
+  }
+  .LetraPost{
+    margin-top: 1vw;
+    font-size: 2vh;
+  }
+  .perfilFoto{
+    width: 10vh;
+    margin-left: 50vh;
+    margin-top: -14vh;
+  }
+  .userName{
+   font-size: 3vh;
+   margin-right: 5vh;
+  }
+  .pubPerfil,.pubPerfil2,.pubPerfil3,.nombrePerfil{
+    margin-right: 19vh;
+    font-size: 1.7vh;
+    margin-left: -15vh;
+  }
+  .editPerfil{
+    margin-right: 11vh;
+    margin-left: -9vh;
+    font-size: 2vh;
+    height: 5vh;
+    white-space: nowrap;
+  }
+  .cardPerfil{
+    margin-top: 12vh;
+  }
+  .containerPosts img {
+    width: 13vh;
+    margin-left: -31vh;
+    margin-right: 31vh;
   }
 
 }
 @media (max-width: 280px) {
-  /* login */
+
   .letraFeed{
-    display: none; {/*LUEGO BORRAR ESTA LINEA*/}
+    display: none; /*LUEGO BORRAR ESTA LINEA*/
    }
   .login-photo{
     display: none;
@@ -693,42 +866,110 @@ opacity: 50%;
     border: none;
   }
   .formularioL{
-    height: 7vh;
+   height: 6vh;
+   width: 33vh;
+   display: flex;
+   margin-left: -2vh;
   }
-
-  .buttonLoginFacebook{
+  .loginIniciar {
     margin-left: -2vh;
+    width: 33vh!important;
+  }
+  .loginLC{
+    margin-left: -3vh;
+    width: 35vh!important;
+  }
+  .buttonLoginFacebook{
+    margin-left: -4vh;
   }
   .letraF{
-   font-size: 2.vh;
-   margin-left: 1vh;
+    white-space: nowrap;
+    margin-left: 1vh;
   }
   .letraO{
-   margin-bottom: -15vh;
-   margin-left: 3vh;
+   margin-bottom: -10vh;
+   margin-left: 8vh;
+   white-space: nowrap;
   }
+
   .loginDescargarAPP{
     margin-top: -2vh;
+    margin-left: 3vh;
   }
   .loginFooter{
     display: flex;
     flex-wrap: wrap;
     font-size: 2vh;
   }
-  /*Registro*/
-.borderR{
-  border: none;
- }
- .circleR{
-  width: 9px;
- }
+
+  .borderR{
+    border: none;
+   }
+  .circleR{
+    width: 9px;
+  }
  .formularioR{
-  height: 6vh;
- }
- .registroCard{
-  border: none;
- }
+   height: 6vh;
+  }
+  .letra,.letraP,.letraFooter,.imgUser,.userName,.time,.imgIG{
+    display: none!important;
+  }
+  .linea{
+    display: flex;
+  }
+  .menuIG {
+    position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    height: 3rem;
+    padding: 0 1vw;
+    border-bottom: 5rem solid #fff;
+    gap: 10vw;
+  } 
+  .postIG{
+    margin-left: 13vw!important;
+    margin-top: 10vh!important;
+    width: 80vw!important;
+    /* height: 150vw; */
+  }
+  .iconIG{
+    display: block;
+  }
+  .LetraPost{
+    margin-top: 1vw;
+    font-size: 2vh;
+  }
+
+  .perfilFoto{
+    width: 10vh;
+    margin-left: 50vh;
+    margin-top: -14vh;
+  }
+  .userName{
+   /* font-size: 3vh;
+   margin-right: 5vh; */
+  }
+  .pubPerfil,.pubPerfil2,.pubPerfil3,.nombrePerfil{
+    margin-right: 19vh;
+    font-size: 1.7vh;
+    margin-left: -15vh;
+  }
+  .editPerfil{
+    margin-right: 11vh;
+    margin-left: -9vh;
+    font-size: 2vh;
+    height: 5vh;
+    white-space: nowrap;
+  }
+  .cardPerfil{
+    margin-top: 12vh;
+  }
+  .containerPosts img {
+    width: 13vh;
+    margin-left: -31vh;
+    margin-right: 31vh;
+  }
+
 }
-
-
-/* min height */

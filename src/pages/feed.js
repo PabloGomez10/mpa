@@ -30,9 +30,13 @@ function Post() {
   return (
     <div>
        <Row>
-           <Col lg={2} md={1} sm={4} xs={4}>
-              <nav className="nav flex-column mt-4">
-                <img src={instagram} alt="Foto de instagram"  className="w-75" />
+           <Col xl={2} lg={1} md={1} sm={1}>
+              <nav className="nav flex-column mt-4 menuIG">
+                <div className='menuIG container-fluid'>
+                  <div class="linea">
+                    <img src={instagram} alt="Foto de instagram"  className="w-75 mb-5 imgIG" />
+                    <FontAwesomeIcon className='icoNot iconIG mb-5' icon="fa-brands fa-instagram" style={{color: "#000000",}} />
+                  </div>
 
                  <div className='d-flex flex-row mt-4'> 
                    <button className='icoNot'><FontAwesomeIcon icon="fa-solid fa-house-user" style={{color: "#000000",}} /></button>
@@ -48,28 +52,31 @@ function Post() {
                       <img src={perfil} className="imgC mt-1" alt="icono de perfil"/>
                       <a className="nav-link letraP" href="/perfil">Perfil</a>
                      </div>
-
-                <a className="nav-link letra mt-5" href="/" >Login</a> {/*Luego borrar esta linea*/}
+                  </div>
              </nav>
            </Col>
 
-          <Col lg={7} md={10} sm={4} xs={4}> 
+          <Col xl={6} lg={8} md={9} sm={10}> 
             { posts.length > 0 && posts.map((item,i) =>   // investigar como funciona
                  
-                <div className="card postIG w-10">
-                  <div className='d-flex flex-row'> 
-                    <img src={perfil} className="card-img-top fotoResolution" alt="foto perfil"/>
-                    <a className="card-text LetraPost"> {item.autor} </a> 
-                    <p className='time'> • {item.fecha}</p>
-                    <button className='icons'><FontAwesomeIcon className='ellipsis' icon="ellipsis-h" /></button>
+                <div className="postIG container-fluid w-75 mt-5">
+                  <div className='d-flex flex-row justify-content-between'> 
+                     <div  className='d-flex flex-row mt-5'>
+                       <img src={perfil} className="card-img-top fotoResolution mb-1" alt="foto perfil"/>
+                       <a className="card-text LetraPost"> {item.autor} </a> 
+                       <p className='time'> • {item.fecha}</p>
+                      </div>
+                    <div className='d-flex mt-5'>
+                      <button className='icons'><FontAwesomeIcon className='ellipsis' icon="ellipsis-h" /></button>
+                    </div>
                   </div>
                   <img src={item.imagen} className="card-img-top" alt="foto del post"/>
 
-                  <div  className='d-flex justify-content-between'>
+                  <div  className='d-flex justify-content-between mt-2'>
                     <div>
-                      <button  className='iconsA like colorLike'> <FontAwesomeIcon icon="fa-regular fa-heart like" style={{color: "#000000",}} /></button>
-                      <button  className='iconsA'> <FontAwesomeIcon icon="fa-regular fa-comment"  className='instagram-btn comment-btn'flip="horizontal" /></button>
-                      <button  className='iconsA'><FontAwesomeIcon icon="fa-regular fa-paper-plane" style={{color: "#000000",}} /></button>
+                      <button  className='icons like'> <FontAwesomeIcon icon="fa-regular fa-heart like" style={{color: "#000000",}} /></button>
+                      <button  className='icons'> <FontAwesomeIcon icon="fa-regular fa-comment"  className='instagram-btn comment-btn'flip="horizontal" /></button>
+                      <button  className='icons'><FontAwesomeIcon icon="fa-regular fa-paper-plane" style={{color: "#000000",}} /></button>
                     </div>
                     <button  className='icons iconSave'><FontAwesomeIcon icon="fa-regular fa-bookmark" style={{color: "#000000",}} /></button>
                   </div>
@@ -86,16 +93,17 @@ function Post() {
                 
             )}
              
-          </Col>
+          </Col> 
 
-           <Col lg={2} md={0} sm={0} xs={0}>
+            <Col xl={1} className="mt-5"> 
             <nav className="nav flex-column w-100">
-              <div className='d-flex flex-row feedPerfil'>
-                <img src={perfil} className="card-img-top imgC" alt="foto del post"/>
-                <a className="nav-link letra" href="/perfil">Cosmefulanito.ok</a>
-              </div>
+              <div className='d-flex flex-row mb-5'>
+                <img src={perfil} className="card-img-top imgUser" alt="foto del post"/>
+                <a className="nav-link userName" href="/perfil">Cosmefulanito.ok</a>
+                 {/* <p>Cosme Fulanito</p>  */}
+              </div> 
               
-                   <div className='d-flex  justify-content-evenly feedFooter'>
+                   <div className='d-flex letraFooter justify-content-evenly gap-3'>
                       <p>Información</p>
                       <p>Ayuda</p>
                       <p>Prensa</p>
@@ -104,14 +112,14 @@ function Post() {
                       <p>Privacidad</p>
                    </div>
 
-                     <div className='d-flex  justify-content-evenly feedFooter' >
+                     <div className='d-flex letraFooter justify-content-evenly gap-3 ' >
                         <p>Condiciones</p>
                         <p>Ubicaciones</p>
                         <p>Idioma</p>
                         <p>Meta verified</p>
                      </div>
                      
-                     <div className='d-flex  justify-content-evenly feedFooter'>
+                     <div className='d-flex letraFooter justify-content-evenly gap-3'>
                        <p>© 2023 INSTAGRAM FROM META</p>
                      </div>
              </nav> 
